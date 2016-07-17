@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: b6078e1dbb6034e8fb32861c7665f79f
-timeCreated: 1468699661
+timeCreated: 1468722004
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Frame1-RMwalkingAnim1280_0
+    21300002: Frame1-RMwalkingAnim1280_1
+    21300004: Frame1-RMwalkingAnim1280_2
+    21300006: Frame1-RMwalkingAnim1280_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,18 +42,108 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 62
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Frame1-RMwalkingAnim1280_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 44
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 40.5}
+        - {x: -14, y: -40.5}
+        - {x: 9, y: -40.5}
+        - {x: 19, y: -25.5}
+        - {x: 19, y: 22.5}
+        - {x: 9, y: 40.5}
+    - name: Frame1-RMwalkingAnim1280_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 44
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 40.5}
+        - {x: -16, y: 40.5}
+        - {x: -18, y: 39.5}
+        - {x: -22, y: 5.5}
+        - {x: -22, y: -40.5}
+        - {x: 12, y: -40.5}
+        - {x: 22, y: -16.5}
+        - {x: 22, y: 14.5}
+        - {x: 15, y: 36.5}
+    - name: Frame1-RMwalkingAnim1280_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 44
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -40.5}
+        - {x: 22, y: -39.5}
+        - {x: 22, y: 8.5}
+        - {x: 16, y: 25.5}
+        - {x: 4, y: 40.5}
+        - {x: -7, y: 40.5}
+        - {x: -10, y: 37.5}
+        - {x: -19, y: -0.5}
+        - {x: -18, y: -3.5}
+        - {x: -21, y: -20.5}
+        - {x: -21, y: -34.5}
+        - {x: -18, y: -40.5}
+        - {x: -4, y: -40.5}
+        - {x: 2, y: -31.5}
+        - {x: 5, y: -39.5}
+        - {x: 6, y: -40.5}
+    - name: Frame1-RMwalkingAnim1280_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 44
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 40.5}
+        - {x: -14, y: 37.5}
+        - {x: -16, y: 23.5}
+        - {x: -16, y: -39.5}
+        - {x: -15, y: -40.5}
+        - {x: 19, y: -40.5}
+        - {x: 22, y: -31.5}
+        - {x: 22, y: 13.5}
+        - {x: 5, y: 40.5}
+      - - {x: -22, y: -1.5}
+        - {x: -22, y: -7.5}
+        - {x: -19, y: -7.5}
+        - {x: -17, y: -5.5}
+        - {x: -17, y: -3.5}
+        - {x: -19, y: -1.5}
     outline: []
   spritePackingTag: 
   userData: 
