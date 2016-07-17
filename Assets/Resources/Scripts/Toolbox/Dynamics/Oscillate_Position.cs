@@ -12,6 +12,8 @@ public class Oscillate_Position : MonoBehaviour {
 	public Vector3 toPoint;
 	public float travelTime = 1f;
 	public bool beginImmediately = true;
+	public bool fireOnce = false;
+	private Timer fireOnceTimer;
 
 	//enum oscillation_type {Sine, Square, Triangle, Custom}
 	[Tooltip("What sort of wave to osccilate by")]
@@ -23,9 +25,14 @@ public class Oscillate_Position : MonoBehaviour {
 	private bool moving;
 	private bool stopnextloop = false;
 
+
 	void Start () {
+		fireOnceTimer = new Timer (travelTime / 2f);
 		if (beginImmediately)
 			Begin ();
+		if (fireOnce) {			
+			stopnextloop = true;
+		}
 	}
 
 
@@ -50,7 +57,7 @@ public class Oscillate_Position : MonoBehaviour {
 
 			transform.localPosition = original_position + displacement;
 		}
-		if (stopnextloop && displacement.magnitude <= 0.001f) {
+		if ((stopnextloop && displacement.magnitude <= 0.001f) || (fireOnce && stopnextloop && fireOnceTimer.IsFinished())) {
 			moving = false;
 			Deactivate ();
 		}
