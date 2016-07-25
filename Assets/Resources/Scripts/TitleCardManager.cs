@@ -11,6 +11,7 @@ public class TitleCardManager : MonoBehaviour {
 	private Timer sceneTimer;
 	private Timer fadeTimer;
 	private AsyncOperation async;
+	private MusicManager musicman;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,9 @@ public class TitleCardManager : MonoBehaviour {
 		float fadetime;
 		fadetime = outrofade.GetComponent<Fader> ().travelTime;
 		fadeTimer = new Timer (timeTillNextScene - (fadetime * 1.1f), false);
+		musicman = GameObject.Find ("MusicManager").GetComponent<MusicManager> ();
+
+		musicman.PlaySong ("Ambience Construction Distant 01");
 	}
 	
 	// Update is called once per frame
