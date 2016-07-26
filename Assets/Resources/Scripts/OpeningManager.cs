@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class TitleCardManager : MonoBehaviour {
+public class OpeningManager : MonoBehaviour {
 
 	public string nextScene;
 	public GameObject outrofade;
@@ -10,6 +10,8 @@ public class TitleCardManager : MonoBehaviour {
 
 	private Timer sceneTimer;
 	private Timer fadeTimer;
+	private float fadetime;
+	private Timer fadesongTimer;
 	private AsyncOperation async;
 	private MusicManager musicman;
 
@@ -17,12 +19,13 @@ public class TitleCardManager : MonoBehaviour {
 	void Start () {
 		sceneTimer = new Timer (timeTillNextScene, false);
 		StartCoroutine("loadNext");
-		float fadetime;
+
 		fadetime = outrofade.GetComponent<Fader> ().travelTime;
 		fadeTimer = new Timer (timeTillNextScene - (fadetime * 1.1f), false);
+		fadesongTimer = new Timer (timeTillNextScene - (fadetime * 2f), false);
 		musicman = GameObject.Find ("MusicManager").GetComponent<MusicManager> ();
 
-		musicman.PlaySong ("TitleCardDriveMusic");
+		//musicman.PlaySong ("TitleCardDriveMusic");
 	}
 	
 	// Update is called once per frame
@@ -33,6 +36,10 @@ public class TitleCardManager : MonoBehaviour {
 
 		if (fadeTimer.IsFinished () == true) {
 			outrofade.SetActive (true);
+		}
+
+		if (fadesongTimer.IsFinished () == true) {
+			musicman.SongFadeOut ("TitleCardDriveMusic", fadetime * 1.8f);
 		}
 
 
