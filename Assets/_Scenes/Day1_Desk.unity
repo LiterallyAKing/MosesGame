@@ -212,6 +212,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 237352110}
   - 212: {fileID: 237352111}
+  - 114: {fileID: 237352112}
   m_Layer: 0
   m_Name: 20s_1
   m_TagString: Untagged
@@ -263,6 +264,19 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &237352112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 237352109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0a01d566d1108409edca706c5d9366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomtarget: {x: 0, y: 1, z: 0}
+  travelTime: 1.5
 --- !u!1 &321540848
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +286,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 321540849}
   - 212: {fileID: 321540850}
+  - 114: {fileID: 321540851}
   m_Layer: 0
   m_Name: 20s_4
   m_TagString: Untagged
@@ -323,6 +338,19 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &321540851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 321540848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0a01d566d1108409edca706c5d9366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomtarget: {x: 0, y: 1, z: 0}
+  travelTime: 1.5
 --- !u!1 &362851291
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,6 +569,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 545921830}
   - 212: {fileID: 545921831}
+  - 114: {fileID: 545921832}
   m_Layer: 0
   m_Name: 20s_6
   m_TagString: Untagged
@@ -592,6 +621,19 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &545921832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 545921829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0a01d566d1108409edca706c5d9366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomtarget: {x: 0, y: 1, z: 0}
+  travelTime: 1.5
 --- !u!1 &694710646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,6 +1471,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1589110644}
   - 212: {fileID: 1589110645}
+  - 114: {fileID: 1589110646}
   m_Layer: 0
   m_Name: 20s_3
   m_TagString: Untagged
@@ -1480,6 +1523,19 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1589110646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1589110643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0a01d566d1108409edca706c5d9366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomtarget: {x: 0, y: 1, z: 0}
+  travelTime: 1.5
 --- !u!1 &1686686019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1522,6 +1578,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1698950638}
   - 212: {fileID: 1698950639}
+  - 114: {fileID: 1698950640}
   m_Layer: 0
   m_Name: 20s_2
   m_TagString: Untagged
@@ -1573,6 +1630,19 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1698950640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698950637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0a01d566d1108409edca706c5d9366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomtarget: {x: 0, y: 1, z: 0}
+  travelTime: 1.5
 --- !u!1 &1894840648
 GameObject:
   m_ObjectHideFlags: 0
