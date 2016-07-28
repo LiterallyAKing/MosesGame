@@ -11,19 +11,21 @@ public class DocumentZoom : MonoBehaviour {
 	private Vector3 origpos;
 	private Quaternion origrotat;
 
-	private bool isMoving = false;
+	public bool isMoving = false;
 
 	private GameObject shadow;
+	private DocumentController doccontrol;
 
 	// Use this for initialization
 	void Start () {
+		doccontrol = GetComponent<DocumentController> ();
 		origpos = transform.localPosition;
 		origscale = transform.localScale;
 		origrotat = transform.localRotation;
 		shadow = transform.Find ("Shadow").gameObject;
 
-		Select ();
-		Invoke ("DeSelect", 4f);
+//		Select ();
+//		Invoke ("DeSelect", 4f);
 	}
 	
 	// Update is called once per frame
@@ -47,8 +49,14 @@ public class DocumentZoom : MonoBehaviour {
 			isMoving = !isMoving;
 			transform.DOLocalRotate (origrotat.eulerAngles, travelTime/2f);
 			transform.DOScale (origscale, travelTime/2f);
-			transform.DOLocalMove (origpos, travelTime/2f).OnComplete (() => isMoving = !isMoving);
+			//transform.DOLocalMove (origpos, travelTime/2f).OnComplete (() => isMoving = !isMoving);
+			transform.DOLocalMove (origpos, travelTime/2f).OnComplete (deselectDone);
 		}
+	}
+
+	void deselectDone(){
+		isMoving = !isMoving;
+		doccontrol.revertColor();
 	}
 
 }
