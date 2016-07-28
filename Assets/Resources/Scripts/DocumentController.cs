@@ -10,6 +10,8 @@ public class DocumentController : MonoBehaviour {
 	private DocumentZoom doczoomer; 
 	private SpriteRenderer sprend;
 	private OfficeManager officeman;
+	private AudioSource upNoise;
+	private AudioSource downNoise;
 
 	private int origRendLayer;
 
@@ -18,6 +20,8 @@ public class DocumentController : MonoBehaviour {
 		doczoomer = GetComponent<DocumentZoom> ();
 		sprend = GetComponent<SpriteRenderer> ();
 		officeman = GameObject.Find ("Docs").GetComponent<OfficeManager> ();
+		upNoise = transform.Find ("UpNoise").gameObject.GetComponent<AudioSource> ();
+		downNoise = transform.Find ("DownNoise").gameObject.GetComponent<AudioSource> ();
 		originalColor = sprend.material.color;
 		origRendLayer = sprend.sortingOrder;
 	}
@@ -39,12 +43,14 @@ public class DocumentController : MonoBehaviour {
 
 	void Selected(){
 		selected = true;
+		upNoise.Play ();
 		officeman.docIsBeingExamined = true;
 		sprend.sortingOrder = 100;
 		doczoomer.Select ();
 	}
 	void Deselected(){
 		selected = false;
+		downNoise.Play ();
 		officeman.docIsBeingExamined = false;
 		sprend.sortingOrder = origRendLayer;
 		doczoomer.DeSelect ();
