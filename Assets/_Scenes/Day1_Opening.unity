@@ -95,6 +95,7 @@ GameObject:
   - 4: {fileID: 53111809}
   - 212: {fileID: 53111811}
   - 114: {fileID: 53111810}
+  - 114: {fileID: 53111812}
   m_Layer: 0
   m_Name: Pt3BG
   m_TagString: Untagged
@@ -109,7 +110,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 53111808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.18, y: -0.82, z: 0}
+  m_LocalPosition: {x: 6.18, y: -0.55, z: 0}
   m_LocalScale: {x: 2.94, y: 1.17, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -177,6 +178,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 0.847}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &53111812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 53111808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e305904039fa27d478f8a893944c9dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 1.4
+  beginDelay: 12
 --- !u!1 &93334046
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &192334460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,6 +692,7 @@ GameObject:
   - 4: {fileID: 503468427}
   - 23: {fileID: 503468429}
   - 102: {fileID: 503468428}
+  - 114: {fileID: 503468430}
   m_Layer: 5
   m_Name: Pt3
   m_TagString: Untagged
@@ -691,7 +707,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 503468426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.79, y: -1.29, z: -1}
+  m_LocalPosition: {x: -8.79, y: -1.55, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -747,6 +763,20 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &503468430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 503468426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72134eead73bd8e49958d98f0d8c855c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 1.5
+  beginDelay: 12
 --- !u!1 &525377540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,7 +1588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &795737150
 Transform:
   m_ObjectHideFlags: 0
@@ -2129,6 +2159,7 @@ GameObject:
   - 4: {fileID: 1309789976}
   - 23: {fileID: 1309789978}
   - 102: {fileID: 1309789977}
+  - 114: {fileID: 1309789979}
   m_Layer: 5
   m_Name: Pt1
   m_TagString: Untagged
@@ -2201,6 +2232,20 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &1309789979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309789975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72134eead73bd8e49958d98f0d8c855c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 1.5
+  beginDelay: 2
 --- !u!1 &1403796145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,32 +2439,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1621895886}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afd66e05dc0bd50478425ce705b0df81, type: 3}
+  m_Script: {fileID: 11500000, guid: e305904039fa27d478f8a893944c9dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeType: 0
-  travelTime: 2
-  beginImmediately: 1
-  killWhenFinished: 1
-  oscillationType: 2
-  customOscillation:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 10
-    - time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 10
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
+  fadeType: 1
+  travelTime: 1.4
+  beginDelay: 2
 --- !u!212 &1621895889
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2612,6 +2639,7 @@ GameObject:
   - 4: {fileID: 2004818788}
   - 212: {fileID: 2004818790}
   - 114: {fileID: 2004818789}
+  - 114: {fileID: 2004818791}
   m_Layer: 0
   m_Name: Pt2BG
   m_TagString: Untagged
@@ -2626,7 +2654,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2004818787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.18, y: -0.82, z: 0}
+  m_LocalPosition: {x: 6.18, y: -0.55, z: 0}
   m_LocalScale: {x: 2.94, y: 1.17, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -2694,6 +2722,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 0.847}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &2004818791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004818787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e305904039fa27d478f8a893944c9dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 1.4
+  beginDelay: 8
 --- !u!1 &2006552228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,6 +2746,7 @@ GameObject:
   - 4: {fileID: 2006552229}
   - 23: {fileID: 2006552231}
   - 102: {fileID: 2006552230}
+  - 114: {fileID: 2006552232}
   m_Layer: 5
   m_Name: Pt2
   m_TagString: Untagged
@@ -2718,7 +2761,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2006552228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.79, y: 1.02, z: -1}
+  m_LocalPosition: {x: -8.79, y: 0.77, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -2773,6 +2816,20 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &2006552232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006552228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72134eead73bd8e49958d98f0d8c855c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 1.5
+  beginDelay: 8
 --- !u!1 &2047045273
 GameObject:
   m_ObjectHideFlags: 0

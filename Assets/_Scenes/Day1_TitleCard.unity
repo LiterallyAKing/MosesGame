@@ -170,37 +170,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 63132982}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afd66e05dc0bd50478425ce705b0df81, type: 3}
+  m_Script: {fileID: 11500000, guid: 72134eead73bd8e49958d98f0d8c855c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeType: 0
-  travelTime: 3
-  beginImmediately: 1
-  killWhenFinished: 1
-  oscillationType: 0
-  customOscillation:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 0.46918008
-      value: 0.02863267
-      inSlope: 0.09067871
-      outSlope: 0.09067871
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
+  fadeType: 1
+  travelTime: 0.5
+  beginDelay: 0.7
 --- !u!1 &297007231
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +188,7 @@ GameObject:
   - 4: {fileID: 297007232}
   - 23: {fileID: 297007234}
   - 102: {fileID: 297007233}
+  - 114: {fileID: 297007235}
   m_Layer: 0
   m_Name: NY
   m_TagString: Untagged
@@ -231,7 +209,7 @@ Transform:
   m_Children:
   - {fileID: 384857520}
   m_Father: {fileID: 1494538165}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!102 &297007233
 TextMesh:
   serializedVersion: 3
@@ -279,6 +257,20 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &297007235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 297007231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72134eead73bd8e49958d98f0d8c855c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 0.5
+  beginDelay: 2.5
 --- !u!1 &384857518
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +280,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 384857520}
   - 212: {fileID: 384857519}
+  - 114: {fileID: 384857521}
   m_Layer: 0
   m_Name: NYBackground
   m_TagString: Untagged
@@ -338,6 +331,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 297007232}
   m_RootOrder: 0
+--- !u!114 &384857521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 384857518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e305904039fa27d478f8a893944c9dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 0.5
+  beginDelay: 2.5
 --- !u!1 &525377540
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,32 +839,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 951655501}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afd66e05dc0bd50478425ce705b0df81, type: 3}
+  m_Script: {fileID: 11500000, guid: e305904039fa27d478f8a893944c9dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeType: 0
-  travelTime: 2
-  beginImmediately: 1
-  killWhenFinished: 1
-  oscillationType: 2
-  customOscillation:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 10
-    - time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 10
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
+  fadeType: 1
+  travelTime: 0.5
+  beginDelay: 0.7
 --- !u!1 &976417680
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +931,7 @@ GameObject:
   - 4: {fileID: 1182556366}
   - 23: {fileID: 1182556368}
   - 102: {fileID: 1182556367}
+  - 114: {fileID: 1182556369}
   m_Layer: 0
   m_Name: Address
   m_TagString: Untagged
@@ -956,13 +946,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1182556365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.38, y: -0.82, z: 0}
+  m_LocalPosition: {x: -9.38, y: -0.8200002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1227181821}
   m_Father: {fileID: 1494538165}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!102 &1182556367
 TextMesh:
   serializedVersion: 3
@@ -1010,6 +1000,20 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &1182556369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1182556365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72134eead73bd8e49958d98f0d8c855c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 0.5
+  beginDelay: 1.5
 --- !u!1001 &1226677057
 Prefab:
   m_ObjectHideFlags: 0
@@ -1069,6 +1073,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1227181821}
   - 212: {fileID: 1227181822}
+  - 114: {fileID: 1227181823}
   m_Layer: 0
   m_Name: AddressBackground
   m_TagString: Untagged
@@ -1119,6 +1124,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1227181823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227181820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e305904039fa27d478f8a893944c9dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 0.5
+  beginDelay: 1.5
 --- !u!1 &1403796145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,8 +1197,8 @@ Transform:
   m_Children:
   - {fileID: 1856138978}
   - {fileID: 63132983}
-  - {fileID: 297007232}
   - {fileID: 1182556366}
+  - {fileID: 297007232}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!95 &1494538166

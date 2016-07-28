@@ -3,6 +3,8 @@ using System.Collections;
 
 public class DocumentController : MonoBehaviour {
 
+	public GameObject textPrompt;
+
 	public bool selected;
 
 	public Color selectColor;
@@ -19,7 +21,7 @@ public class DocumentController : MonoBehaviour {
 	void Start () {
 		doczoomer = GetComponent<DocumentZoom> ();
 		sprend = GetComponent<SpriteRenderer> ();
-		officeman = GameObject.Find ("Docs").GetComponent<OfficeManager> ();
+		officeman = GameObject.Find ("DeskManager").GetComponent<OfficeManager> ();
 		upNoise = transform.Find ("UpNoise").gameObject.GetComponent<AudioSource> ();
 		downNoise = transform.Find ("DownNoise").gameObject.GetComponent<AudioSource> ();
 		originalColor = sprend.material.color;
@@ -46,17 +48,22 @@ public class DocumentController : MonoBehaviour {
 		upNoise.Play ();
 		officeman.docIsBeingExamined = true;
 		sprend.sortingOrder = 100;
+		Invoke ("TurnOnPrompt", doczoomer.travelTime);
 		doczoomer.Select ();
 	}
-	void Deselected(){
+	public void Deselected(){
 		selected = false;
 		downNoise.Play ();
 		officeman.docIsBeingExamined = false;
 		sprend.sortingOrder = origRendLayer;
 		doczoomer.DeSelect ();
+		textPrompt.SetActive (false);
 	}
 
 
+	void TurnOnPrompt(){
+		textPrompt.SetActive (true);
+	}
 
 
 

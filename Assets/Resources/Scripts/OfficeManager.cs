@@ -14,4 +14,11 @@ public class OfficeManager : MonoBehaviour {
 	void Update () {
 	
 	}
+
+
+	public void DocChosen(int chosen){
+		
+	}
+
+
 }
