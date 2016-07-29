@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
+
 
 public class DocumentController : MonoBehaviour {
 
@@ -34,10 +36,12 @@ public class DocumentController : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		if (!selected && !officeman.docIsBeingExamined) {
-			Selected ();
-		} else if (selected && !doczoomer.isMoving){
-			Deselected ();
+		if (!EventSystem.current.IsPointerOverGameObject ()) {
+			if (!selected && !officeman.docIsBeingExamined) {
+				Selected ();
+			} else if (selected && !doczoomer.isMoving) {
+				Deselected ();
+			}
 		}
 	}
 
@@ -45,6 +49,7 @@ public class DocumentController : MonoBehaviour {
 
 	void Selected(){
 		selected = true;
+		upNoise.pitch = Random.Range (0.95f, 1.05f);
 		upNoise.Play ();
 		officeman.docIsBeingExamined = true;
 		sprend.sortingOrder = 100;
@@ -53,6 +58,7 @@ public class DocumentController : MonoBehaviour {
 	}
 	public void Deselected(){
 		selected = false;
+		downNoise.pitch = Random.Range (0.95f, 1.05f);
 		downNoise.Play ();
 		officeman.docIsBeingExamined = false;
 		sprend.sortingOrder = origRendLayer;
