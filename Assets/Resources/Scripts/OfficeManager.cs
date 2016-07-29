@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 using DG.Tweening;
 
@@ -20,6 +21,9 @@ public class OfficeManager : MonoBehaviour {
 	public Image outroFade;
 
 	public GameObject newspaper;
+	public string[] endingParagraphs;
+	string docCombo = "";
+	private string articleP1, articleP2, articleP3;
 
 	// Use this for initialization
 	void Start () {
@@ -37,6 +41,9 @@ public class OfficeManager : MonoBehaviour {
 
 	public void DocChosen(int chosen){
 		docsChosenSoFar++;
+	
+		docCombo += chosen.ToString ();
+
 		if (docsChosenSoFar == 1) {
 			chosenDocsHolder.rectTransform.DOLocalMoveX (547f, 1f);
 			//TODO: Find sound for this, like a typewriter.
@@ -45,12 +52,15 @@ public class OfficeManager : MonoBehaviour {
 		switch (docsChosenSoFar) {
 		case 1:
 			docA.text = docDescs [chosen - 1];
+			articleP1 = endingParagraphs [chosen - 1];
 			break;
 		case 2:
 			docB.text = docDescs [chosen - 1];
+			articleP2 = endingParagraphs [chosen - 1];
 			break;
 		case 3:
 			docC.text = docDescs [chosen - 1];
+			articleP3 = endingParagraphs [chosen - 1];
 			break;
 		}
 
@@ -70,8 +80,11 @@ public class OfficeManager : MonoBehaviour {
 	void BeginOfEnd(){
 		outroFade.gameObject.SetActive (true);
 		outroFade.DOFade (1f, 3f);
-		//TODO: Set Headline
-		//TODO: Set article
+
+		sortCombo ();
+
+		newspaper.transform.Find ("Headline").GetComponent<Text> ().text = GenerateHeadLine (docCombo);
+		newspaper.transform.Find ("Article").GetComponent<Text> ().text = articleP1 + '\n' + articleP2 + '\n' + articleP3;
 		//TODO: Fade out music probably.
 		Invoke("Ending", 4f);
 	}
@@ -87,4 +100,35 @@ public class OfficeManager : MonoBehaviour {
 		async.allowSceneActivation = false;
 		yield return async;
 	}
+
+
+
+	string GenerateHeadLine(string chosenDocs){
+		string toreturn = "";
+		if(chosenDocs == "123") { toreturn = "New Parks for New York City";}
+		if(chosenDocs == "124") { toreturn = "Barrons Lose Battle: New Parks in North Shore";}
+		if(chosenDocs == "126") { toreturn = "Parks expansion into Queens and Brooklyn";}
+		if(chosenDocs == "134") { toreturn = "Barrons Lose Battle: New Parks in North Shore";}
+		if(chosenDocs == "136") { toreturn = "Parks bill defeated; Smith vows to fight again in '28";}
+		if(chosenDocs == "146") { toreturn = "Smith delivers Parks Across Long Island";}
+		if(chosenDocs == "234") { toreturn = "New Parks for New York City";}
+		if(chosenDocs == "236") { toreturn = "Parks bill defeated; Smith vows to fight again in '28";}
+		if(chosenDocs == "246") { toreturn = "Parks expansion into Queens and Brooklyn";}
+		if(chosenDocs == "346") { toreturn = "Smith delivers Parks Across Long Island";}
+		return toreturn;
+	}
+
+	void sortCombo(){
+		string temp = docCombo;
+		List<int> templist = new List<int> ();
+		templist.Add(int.Parse(docCombo.Substring(0,1)));
+		templist.Add(int.Parse(docCombo.Substring(1,1)));
+		templist.Add(int.Parse(docCombo.Substring(2,1)));
+		templist.Sort ();
+		docCombo = "";
+		for (int i = 0; i < 3; i++) {
+			docCombo += templist [i];
+		}
+	}
+
 }

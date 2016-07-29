@@ -768,12 +768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomtarget: {x: 0, y: 1, z: 0}
   travelTime: 1
-  origscale: {x: 0, y: 0, z: 0}
-  origpos: {x: 0, y: 0, z: 0}
-  origrotat: {x: 0, y: 0, z: 0, w: 0}
   isMoving: 0
-  shadow: {fileID: 0}
-  doccontrol: {fileID: 0}
 --- !u!65 &237352113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -799,22 +794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPrompt: {fileID: 1160135923}
   selected: 0
-  selectColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  doczoomer: {fileID: 0}
-  sprend: {fileID: 0}
-  officeman: {fileID: 0}
-  upNoise: {fileID: 0}
-  downNoise: {fileID: 0}
-  origRendLayer: 0
+  selectColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &259834249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,12 +1169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomtarget: {x: 0, y: 1, z: 0}
   travelTime: 1
-  origscale: {x: 0, y: 0, z: 0}
-  origpos: {x: 0, y: 0, z: 0}
-  origrotat: {x: 0, y: 0, z: 0, w: 0}
   isMoving: 0
-  shadow: {fileID: 0}
-  doccontrol: {fileID: 0}
 --- !u!65 &321540852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1220,22 +1195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPrompt: {fileID: 2009908479}
   selected: 0
-  selectColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  doczoomer: {fileID: 0}
-  sprend: {fileID: 0}
-  officeman: {fileID: 0}
-  upNoise: {fileID: 0}
-  downNoise: {fileID: 0}
-  origRendLayer: 0
+  selectColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &362851291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,12 +1649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomtarget: {x: 0, y: 1, z: 0}
   travelTime: 1
-  origscale: {x: 0, y: 0, z: 0}
-  origpos: {x: 0, y: 0, z: 0}
-  origrotat: {x: 0, y: 0, z: 0, w: 0}
   isMoving: 0
-  shadow: {fileID: 0}
-  doccontrol: {fileID: 0}
 --- !u!65 &545921833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1720,22 +1675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPrompt: {fileID: 1254397712}
   selected: 0
-  selectColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  doczoomer: {fileID: 0}
-  sprend: {fileID: 0}
-  officeman: {fileID: 0}
-  upNoise: {fileID: 0}
-  downNoise: {fileID: 0}
-  origRendLayer: 0
+  selectColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &694710646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,22 +1834,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fceaeb339b971b429c4cc600acabd13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  supportHDRTextures: 1
-  supportDX11: 0
-  isSupported: 1
   tweakMode: 0
   screenBlendMode: 1
   hdr: 0
-  doHdr: 0
   sepBlurSpread: 2.5
   quality: 1
   bloomIntensity: 0.5
   bloomThreshold: 0.29
-  bloomThresholdColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
   bloomBlurIterations: 2
   hollywoodFlareBlurIterations: 2
   flareRotation: 0
@@ -1918,37 +1850,17 @@ MonoBehaviour:
   lensflareIntensity: 0
   lensflareThreshold: 0.3
   lensFlareSaturation: 0.75
-  flareColorA:
-    r: 0.4
-    g: 0.4
-    b: 0.8
-    a: 0.75
-  flareColorB:
-    r: 0.4
-    g: 0.8
-    b: 0.8
-    a: 0.75
-  flareColorC:
-    r: 0.8
-    g: 0.4
-    b: 0.8
-    a: 0.75
-  flareColorD:
-    r: 0.8
-    g: 0.4
-    b: 0
-    a: 0.75
+  flareColorA: {r: 0.4, g: 0.4, b: 0.8, a: 0.75}
+  flareColorB: {r: 0.4, g: 0.8, b: 0.8, a: 0.75}
+  flareColorC: {r: 0.8, g: 0.4, b: 0.8, a: 0.75}
+  flareColorD: {r: 0.8, g: 0.4, b: 0, a: 0.75}
   lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
     type: 3}
   lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
-  lensFlareMaterial: {fileID: 0}
   screenBlendShader: {fileID: 4800000, guid: 7856cbff0a0ca45c787d5431eb805bb0, type: 3}
-  screenBlend: {fileID: 0}
   blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
-  blurAndFlaresMaterial: {fileID: 0}
   brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
     type: 3}
-  brightPassFilterMaterial: {fileID: 0}
 --- !u!1 &773096103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,10 +2309,9 @@ MonoBehaviour:
   travelTime: 0.7
   beginImmediately: 1
   killWhenFinished: 1
-  fromPoint: 0
-  toPoint: 0
   oscillationType: 0
   customOscillation:
+    serializedVersion: 2
     m_Curve:
     - time: 0
       value: 0
@@ -2415,18 +2326,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  original_alpha: 0
-  original_color:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  moving: 0
-  internalTime: 0
-  rendType: 0
-  r: {fileID: 0}
-  i: {fileID: 0}
-  sr: {fileID: 0}
 --- !u!212 &858991102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2499,18 +2398,41 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 545921829}
   - {fileID: 0}
-  docsChosenSoFar: 0
   docDescs:
-  - 6f6e65
-  - 74776f
-  - 7468726565
-  - 666f7572
-  - 66697665
-  - 736978
-  - 736576656e
-  nextScene: 446179325f5469746c6543617264
+  - one
+  - two
+  - three
+  - four
+  - five
+  - six
+  - seven
+  nextScene: Day2_TitleCard
   outroFade: {fileID: 259834250}
   newspaper: {fileID: 216119102}
+  endingParagraphs:
+  - Landowners across the region gear up for a battle with Robert Moses over Al Smith's
+    controversial Long Island Park System plan. Parks are seen as popular, but their
+    pending locations has caused quite a stir. From Brooklyn homeowners to Long Island
+    fisherman, homeowners and busiensses decry "Not in My Backyard."
+  - 'New York Times Editorial Board: Parks in farms or Parks at home? With vast tracts
+    of Brooklyn and Queens still underdeveloped, why is the Smith admisitraiton poposing
+    parks all the way out on Long Island? Shouldn''t we put them closer to where New
+    York City residents actually live? Make parks accessible by subways and trolleys!'
+  - Property magnates on Long Island are preparing to challenge the Smith administration
+    on its audacious and controversial Parks program. While many in the city aknowledge
+    the need for new Parks, not everyone completely agrees.
+  - The Long Island Barrons commited a serious unforced error. In the battle over
+    the Taylor estate fight, the wealthy landowners inadvertantly showed their true
+    intentions. They are not concerned with property rights or due process, they just
+    want to be left alone to enjoy the magesty of the Long Island beaches to themselves,
+    forever closing off this pristine territory from the common folks.
+  - 
+  - 'In a shocking turn of events, the Smith administration has made a new ally in
+    the fight for a new park system: F Trubee Davison. Son of Henry Davison, a partner
+    of J.P. Morgna, the younger Davison is a freshman member of the assembly looking
+    to make his mark on New York State politics. Is this an olive branch from Smith
+    to the Long Island Barons?'
+  - 
 --- !u!4 &914278810
 Transform:
   m_ObjectHideFlags: 0
@@ -3876,12 +3798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomtarget: {x: 0, y: 1, z: 0}
   travelTime: 1
-  origscale: {x: 0, y: 0, z: 0}
-  origpos: {x: 0, y: 0, z: 0}
-  origrotat: {x: 0, y: 0, z: 0, w: 0}
   isMoving: 0
-  shadow: {fileID: 0}
-  doccontrol: {fileID: 0}
 --- !u!65 &1589110647
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3907,22 +3824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPrompt: {fileID: 152182439}
   selected: 0
-  selectColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  doczoomer: {fileID: 0}
-  sprend: {fileID: 0}
-  officeman: {fileID: 0}
-  upNoise: {fileID: 0}
-  downNoise: {fileID: 0}
-  origRendLayer: 0
+  selectColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1614541945
 GameObject:
   m_ObjectHideFlags: 0
@@ -4350,12 +4252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomtarget: {x: 0, y: 1, z: 0}
   travelTime: 1
-  origscale: {x: 0, y: 0, z: 0}
-  origpos: {x: 0, y: 0, z: 0}
-  origrotat: {x: 0, y: 0, z: 0, w: 0}
   isMoving: 0
-  shadow: {fileID: 0}
-  doccontrol: {fileID: 0}
 --- !u!65 &1698950641
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4381,22 +4278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPrompt: {fileID: 1630296523}
   selected: 0
-  selectColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  originalColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  doczoomer: {fileID: 0}
-  sprend: {fileID: 0}
-  officeman: {fileID: 0}
-  upNoise: {fileID: 0}
-  downNoise: {fileID: 0}
-  origRendLayer: 0
+  selectColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1735636177
 GameObject:
   m_ObjectHideFlags: 0
