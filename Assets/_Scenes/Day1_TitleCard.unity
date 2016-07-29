@@ -1023,7 +1023,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11423344, guid: ac234f3365a22944dbb4a03617875058, type: 2}
       propertyPath: Songs.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 477254, guid: ac234f3365a22944dbb4a03617875058, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1061,6 +1061,18 @@ Prefab:
       propertyPath: Songs.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 4d85f80497a29c44595cb64f09569bb5, type: 3}
+    - target: {fileID: 11423344, guid: ac234f3365a22944dbb4a03617875058, type: 2}
+      propertyPath: Songs.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f049ce6e02e410d8e5114b114553f4, type: 3}
+    - target: {fileID: 11423344, guid: ac234f3365a22944dbb4a03617875058, type: 2}
+      propertyPath: Songs.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: bba77af748cd9401d9aaecfb74a70ae5, type: 3}
+    - target: {fileID: 11423344, guid: ac234f3365a22944dbb4a03617875058, type: 2}
+      propertyPath: Songs.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: fae95b7829b23491c85e201f7cc52e0f, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac234f3365a22944dbb4a03617875058, type: 2}
   m_IsPrefabParent: 0

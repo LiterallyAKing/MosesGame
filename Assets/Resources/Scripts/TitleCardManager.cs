@@ -23,6 +23,10 @@ public class TitleCardManager : MonoBehaviour {
 		musicman = GameObject.Find ("MusicManager").GetComponent<MusicManager> ();
 
 		musicman.PlaySong ("TitleCardDriveMusic");
+		musicman.PlaySong ("MainSong1");
+		musicman.SetSongVolume ("MainSong1", 0.9f);
+		//musicman.SongFadeIn ("MainSong1", 1f);
+
 	}
 	
 	// Update is called once per frame
