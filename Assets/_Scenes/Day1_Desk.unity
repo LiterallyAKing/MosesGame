@@ -2673,6 +2673,7 @@ MonoBehaviour:
     to make his mark on New York State politics. Is this an olive branch from Smith
     to the Long Island Barons?'
   - 
+  headlines: []
 --- !u!4 &914278810
 Transform:
   m_ObjectHideFlags: 0
@@ -3345,6 +3346,14 @@ Prefab:
     - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_Colors.m_HighlightedColor.b
       value: 0.37254903
+      objectReference: {fileID: 0}
+    - target: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}
@@ -4953,63 +4962,25 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Name
-      value: Doc1Prompt
-      objectReference: {fileID: 0}
-    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 914278808}
     - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 237352114}
-    - target: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 914278808}
     - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 914278808}
-    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: docChosenNoise
+    - target: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_Name
+      value: Doc1Prompt
       objectReference: {fileID: 0}
-    - target: {fileID: 11476284, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f59810ce6e35d45f88f38459ab23c79e,
-        type: 3}
-    - target: {fileID: 11493764, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 016b33af36a8648e590e32e25f38d4f9,
-        type: 3}
-    - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.g
-      value: 0.43382353
-      objectReference: {fileID: 0}
-    - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.43382353
-      objectReference: {fileID: 0}
-    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.44827586
-      objectReference: {fileID: 0}
-    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.375
+    - target: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}
@@ -5317,6 +5288,10 @@ Prefab:
     - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_Colors.m_HighlightedColor.b
       value: 0.37254903
+      objectReference: {fileID: 0}
+    - target: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}
