@@ -13,6 +13,8 @@ public class TitleCardManager : MonoBehaviour {
 	private AsyncOperation async;
 	private MusicManager musicman;
 
+	public string songtoplay;
+
 	// Use this for initialization
 	void Start () {
 		sceneTimer = new Timer (timeTillNextScene, false);
@@ -23,8 +25,8 @@ public class TitleCardManager : MonoBehaviour {
 		musicman = GameObject.Find ("MusicManager").GetComponent<MusicManager> ();
 
 		musicman.PlaySong ("TitleCardDriveMusic");
-		musicman.PlaySong ("MainSong1");
-		musicman.SetSongVolume ("MainSong1", 0.9f);
+		musicman.PlaySong (songtoplay);
+		musicman.SetSongVolume (songtoplay, 0.9f);
 		//musicman.SongFadeIn ("MainSong1", 1f);
 
 	}

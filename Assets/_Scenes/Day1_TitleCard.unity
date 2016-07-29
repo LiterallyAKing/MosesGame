@@ -921,6 +921,7 @@ MonoBehaviour:
   nextScene: Day1_Opening
   outrofade: {fileID: 615753401}
   timeTillNextScene: 7
+  songtoplay: MainSong1
 --- !u!1 &1182556365
 GameObject:
   m_ObjectHideFlags: 0

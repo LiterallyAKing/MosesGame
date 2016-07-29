@@ -27,6 +27,9 @@ public class OfficeManager : MonoBehaviour {
 
 	public string[] headlines;
 
+	private MusicManager musicman;
+
+
 	// Use this for initialization
 	void Start () {
 		StartCoroutine("loadNext");
@@ -92,7 +95,7 @@ public class OfficeManager : MonoBehaviour {
 
 		newspaper.transform.Find ("Headline").GetComponent<Text> ().text = GenerateHeadLine (docCombo);
 		newspaper.transform.Find ("Article").GetComponent<Text> ().text = "    " + articleP1 + '\n' + "    " + articleP2 + '\n' + "    " + articleP3;
-		//TODO: Fade out music probably.
+		musicman.SongFadeOut ("MainSong1", 5f);
 		Invoke("Ending", 4f);
 	}
 
