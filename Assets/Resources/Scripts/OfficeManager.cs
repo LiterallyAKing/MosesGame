@@ -101,6 +101,7 @@ public class OfficeManager : MonoBehaviour {
 
 	void Ending(){
 		newspaper.GetComponent<Image>().rectTransform.DOLocalMoveY (-348f, 1f);
+		transform.Find ("NewspaperMoveNoise").GetComponent<AudioSource> ().Play ();
 	}
 
 
