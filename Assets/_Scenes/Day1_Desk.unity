@@ -270,7 +270,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.76
-  m_Text: Davidson Letter
+  m_Text: 
 --- !u!222 &112456139
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -393,6 +393,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 925086270}
     m_Modifications:
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 22424392, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -502,6 +506,70 @@ Prefab:
     - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Deselected
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 914278808}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: DocChosen
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DocChosen
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 914278808}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: docChosenNoise
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}
@@ -853,7 +921,7 @@ RectTransform:
   m_GameObject: {fileID: 259834249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 925086270}
@@ -978,6 +1046,14 @@ Prefab:
     - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Deselected
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 914278808}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: docChosenNoise
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}
@@ -2356,6 +2432,110 @@ SpriteRenderer:
   m_Color: {r: 0.19117647, g: 0.19117647, b: 0.19117647, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &896966977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 896966978}
+  - 82: {fileID: 896966979}
+  m_Layer: 0
+  m_Name: ChosenNoise
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &896966978
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 896966977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 914278810}
+  m_RootOrder: 1
+--- !u!82 &896966979
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 896966977}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24326188, guid: eb6ff93a843d51d43a2afcc516274b71,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 34b75fc7ecc6c3c4494541ce70abca02, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &914278807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,12 +2579,12 @@ MonoBehaviour:
   - {fileID: 545921829}
   - {fileID: 0}
   docDescs:
-  - one
-  - two
-  - three
-  - four
+  - Brooklyn Botanic Letter
+  - NYC Parks Map
+  - LI Opposition
+  - Taylor Estate Case
   - five
-  - six
+  - Davison Letter
   - seven
   nextScene: Day2_TitleCard
   outroFade: {fileID: 259834250}
@@ -2445,6 +2625,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 858991100}
+  - {fileID: 896966978}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!1 &925086266
@@ -3059,44 +3240,21 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Name
-      value: Doc6Prompt
-      objectReference: {fileID: 0}
-    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 914278808}
     - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 545921834}
-    - target: {fileID: 22424392, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 22424392, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 11487884, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Text
-      value: This Davison fellow will be my puppet. He is a scion of the Barons. If
-        I can get him on my side, I can neutralize the opposition of the wealthy land
-        owners. By partnering with one of their own, they will think I'm on their
-        side!
-      objectReference: {fileID: 0}
-    - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Deselected
-      objectReference: {fileID: 0}
     - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 6
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 914278808}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 914278808}
     - target: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Name
+      value: Doc6Prompt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}
@@ -3295,7 +3453,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.76
-  m_Text: Davidson Letter
+  m_Text: 
 --- !u!222 &1364076896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3378,7 +3536,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 7
     m_MaxSize: 85
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -4346,7 +4504,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.76
-  m_Text: Davidson Letter
+  m_Text: 
 --- !u!222 &1735636180
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4721,6 +4879,18 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 914278808}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: docChosenNoise
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}
   m_IsPrefabParent: 0
@@ -4982,35 +5152,21 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 914278808}
-    - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 321540853}
-    - target: {fileID: 22424392, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 22424392, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11487884, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_Text
-      value: The Robber Barons have showed their hand. "Where is a poor millionaire
-        to go" Foolish men. They think their money can insulate them and keep the
-        poor swealtering in the cities. I must leverage my connections with the press!
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DocChosen
       objectReference: {fileID: 0}
     - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Deselected
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 914278808}
+    - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: docChosenNoise
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}

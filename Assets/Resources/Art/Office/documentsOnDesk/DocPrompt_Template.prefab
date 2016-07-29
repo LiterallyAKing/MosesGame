@@ -34,7 +34,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &154706
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +221,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: docChosenNoise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -260,10 +271,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Petty squables of lowly men. They think these minor issues will stop my
-    beautful parks. They will create excuses from thin air to protect their lands.
-    I will not be disuaded so easily though. I must figure out the funding mechanism
-    to acquire this land before they win a media battle.
+  m_Text: This Davison fellow will be my puppet. He is a scion of the Barons. If I
+    can get him on my side, I can neutralize the opposition of the wealthy land owners.
+    By partnering with one of their own, they will think I'm on their side!
 --- !u!114 &11493764
 MonoBehaviour:
   m_ObjectHideFlags: 1

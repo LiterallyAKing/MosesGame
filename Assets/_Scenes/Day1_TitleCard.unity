@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 0.7
+  beginDelay: 1.5
 --- !u!1 &297007231
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 2.5
+  beginDelay: 3.5
 --- !u!1 &384857518
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 2.5
+  beginDelay: 3.5
 --- !u!1 &525377540
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,7 +846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 0.7
+  beginDelay: 1.5
 --- !u!1 &976417680
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,7 +920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: Day1_Opening
   outrofade: {fileID: 615753401}
-  timeTillNextScene: 5
+  timeTillNextScene: 7
 --- !u!1 &1182556365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 1.5
+  beginDelay: 3
 --- !u!1001 &1226677057
 Prefab:
   m_ObjectHideFlags: 0
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 1.5
+  beginDelay: 3
 --- !u!1 &1403796145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,7 +1208,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1494538164}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4a505ed1fc6027046bac12915f4ec936, type: 2}
   m_CullingMode: 0

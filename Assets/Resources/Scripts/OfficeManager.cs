@@ -28,9 +28,10 @@ public class OfficeManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		StartCoroutine("loadNext");
-		for (int i = 0; i < docDescs.Length; i++) {
-			//TODO: Check if string is longer than XX chars, and if so, add line break. See WrapText for how to do it;
-		}
+//		for (int i = 0; i < docDescs.Length; i++) {
+//			//if(docDescs[i].Length > 22)
+//			//TODO: Check if string is longer than XX chars, and if so, add line break. See WrapText for how to do it;
+//		}
 	}
 	
 	// Update is called once per frame
@@ -38,6 +39,10 @@ public class OfficeManager : MonoBehaviour {
 	
 	}
 
+
+	public void docChosenNoise(){
+		transform.Find ("ChosenNoise").GetComponent<AudioSource> ().Play ();
+	}
 
 	public void DocChosen(int chosen){
 		docsChosenSoFar++;
@@ -84,7 +89,7 @@ public class OfficeManager : MonoBehaviour {
 		sortCombo ();
 
 		newspaper.transform.Find ("Headline").GetComponent<Text> ().text = GenerateHeadLine (docCombo);
-		newspaper.transform.Find ("Article").GetComponent<Text> ().text = articleP1 + '\n' + articleP2 + '\n' + articleP3;
+		newspaper.transform.Find ("Article").GetComponent<Text> ().text = "    " + articleP1 + '\n' + "    " + articleP2 + '\n' + "    " + articleP3;
 		//TODO: Fade out music probably.
 		Invoke("Ending", 4f);
 	}
