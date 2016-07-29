@@ -25,6 +25,8 @@ public class OfficeManager : MonoBehaviour {
 	string docCombo = "";
 	private string articleP1, articleP2, articleP3;
 
+	public string[] headlines;
+
 	// Use this for initialization
 	void Start () {
 		StartCoroutine("loadNext");
@@ -110,16 +112,41 @@ public class OfficeManager : MonoBehaviour {
 
 	string GenerateHeadLine(string chosenDocs){
 		string toreturn = "";
-		if(chosenDocs == "123") { toreturn = "New Parks for New York City";}
-		if(chosenDocs == "124") { toreturn = "Barrons Lose Battle: New Parks in North Shore";}
-		if(chosenDocs == "126") { toreturn = "Parks expansion into Queens and Brooklyn";}
-		if(chosenDocs == "134") { toreturn = "Barrons Lose Battle: New Parks in North Shore";}
-		if(chosenDocs == "136") { toreturn = "Parks bill defeated; Smith vows to fight again in '28";}
-		if(chosenDocs == "146") { toreturn = "Smith delivers Parks Across Long Island";}
-		if(chosenDocs == "234") { toreturn = "New Parks for New York City";}
-		if(chosenDocs == "236") { toreturn = "Parks bill defeated; Smith vows to fight again in '28";}
-		if(chosenDocs == "246") { toreturn = "Parks expansion into Queens and Brooklyn";}
-		if(chosenDocs == "346") { toreturn = "Smith delivers Parks Across Long Island";}
+		if(chosenDocs == "123") { toreturn = headlines[0];}
+		if(chosenDocs == "124") { toreturn = headlines[1];}
+		if(chosenDocs == "126") { toreturn = headlines[2];}
+		if(chosenDocs == "134") { toreturn = headlines[3];}
+		if(chosenDocs == "136") { toreturn = headlines[4];}
+		if(chosenDocs == "146") { toreturn = headlines[5];}
+		if(chosenDocs == "234") { toreturn = headlines[6];}
+		if(chosenDocs == "236") { toreturn = headlines[7];}
+		if(chosenDocs == "246") { toreturn = headlines[8];}
+		if(chosenDocs == "346") { toreturn = headlines[9];}
+		if(chosenDocs == "125") { toreturn = headlines[10];}
+		if(chosenDocs == "127") { toreturn = headlines[11];}
+		if(chosenDocs == "135") { toreturn = headlines[12];}
+		if(chosenDocs == "137") { toreturn = headlines[13];}
+		if(chosenDocs == "145") { toreturn = headlines[14];}
+		if(chosenDocs == "147") { toreturn = headlines[15];}
+		if(chosenDocs == "156") { toreturn = headlines[16];}
+		if(chosenDocs == "157") { toreturn = headlines[17];}
+		if(chosenDocs == "167") { toreturn = headlines[18];}
+		if(chosenDocs == "235") { toreturn = headlines[19];}
+		if(chosenDocs == "237") { toreturn = headlines[20];}
+		if(chosenDocs == "245") { toreturn = headlines[21];}
+		if(chosenDocs == "247") { toreturn = headlines[22];}
+		if(chosenDocs == "256") { toreturn = headlines[23];}
+		if(chosenDocs == "257") { toreturn = headlines[24];}
+		if(chosenDocs == "267") { toreturn = headlines[25];}
+		if(chosenDocs == "345") { toreturn = headlines[26];}
+		if(chosenDocs == "347") { toreturn = headlines[27];}
+		if(chosenDocs == "356") { toreturn = headlines[28];}
+		if(chosenDocs == "357") { toreturn = headlines[29];}
+		if(chosenDocs == "367") { toreturn = headlines[30];}
+		if(chosenDocs == "456") { toreturn = headlines[31];}
+		if(chosenDocs == "457") { toreturn = headlines[32];}
+		if(chosenDocs == "467") { toreturn = headlines[33];}
+		if(chosenDocs == "567") { toreturn = headlines[34];}
 		return toreturn;
 	}
 

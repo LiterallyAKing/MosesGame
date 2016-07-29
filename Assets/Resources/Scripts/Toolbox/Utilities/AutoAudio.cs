@@ -1,6 +1,8 @@
-﻿
+﻿#if UNITY_EDITOR
 using UnityEngine;
+
 using UnityEditor;
+
 using System.Collections.Generic;
 
 [ExecuteInEditMode]
@@ -187,3 +189,4 @@ class AudioAnalyzer
       if (countOfClips != 0) Debug.LogWarning("AutoAudio detected " + countOfClips + " clips in " + importedClip.name + ". Consider re-exporting file without clipping.");
    }
 }
+#endif
