@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 0.7
+  beginDelay: 1.5
 --- !u!1 &297007231
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 2.5
+  beginDelay: 3.5
 --- !u!1 &384857518
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 2.5
+  beginDelay: 3
 --- !u!1 &525377540
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,26 +416,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeType: 0
-  travelTime: 1
+  travelTime: 5
   beginImmediately: 1
   killWhenFinished: 1
   oscillationType: 0
   customOscillation:
     serializedVersion: 2
     m_Curve:
-    - time: 0
-      value: 0
+    - time: 0.4875
+      value: 0.012499999
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - time: 1
-      value: 1
+    - time: 1.5
+      value: 1.00625
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!212 &615753404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -482,7 +482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &633838433
 Transform:
   m_ObjectHideFlags: 0
@@ -846,7 +846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 0.7
+  beginDelay: 1
 --- !u!1 &976417680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 1.5
+  beginDelay: 2.5
 --- !u!1001 &1226677057
 Prefab:
   m_ObjectHideFlags: 0
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 1.5
+  beginDelay: 2
 --- !u!1 &1403796145
 GameObject:
   m_ObjectHideFlags: 0
