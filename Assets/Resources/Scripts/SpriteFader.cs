@@ -8,6 +8,7 @@ public class SpriteFader : MonoBehaviour {
 	[SerializeField] fadetype fadeType = fadetype.Fade_Out;
 	public float travelTime = 1f;
 	public float beginDelay = 1f;
+	public float toAlpha = 1f;
 
 	private float original_alpha;
 	private Color original_color;
@@ -19,6 +20,8 @@ public class SpriteFader : MonoBehaviour {
 	private Timer delaytimer;
 
 	void Start () {
+		alphaval = Mathf.Abs (1f - toAlpha);
+
 		sprend = GetComponent < SpriteRenderer> ();
 		if (beginDelay == 0) {
 			StartFade ();
@@ -36,9 +39,12 @@ public class SpriteFader : MonoBehaviour {
 		Color newval = sprend.color;
 		newval.a = alphaval;
 		sprend.color = newval;
+//		print (alphaval);
+//		print (original_alpha);
+//		print (toAlpha);
 	}
 
 	void StartFade(){
-		DOTween.To(()=> alphaval, x=> alphaval = x, original_alpha, 1);
+		DOTween.To(()=> alphaval, x=> alphaval = x, original_alpha, travelTime);
 	}
 }
