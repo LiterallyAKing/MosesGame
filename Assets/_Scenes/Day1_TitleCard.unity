@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 1.5
+  beginDelay: 1
 --- !u!1 &297007231
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 3.5
+  beginDelay: 3
 --- !u!1 &384857518
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +344,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 3.5
+  beginDelay: 3
+  toAlpha: 1
 --- !u!1 &525377540
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +477,7 @@ GameObject:
   - 4: {fileID: 633838433}
   - 212: {fileID: 633838435}
   - 114: {fileID: 633838434}
+  - 114: {fileID: 633838436}
   m_Layer: 0
   m_Name: IntroFade
   m_TagString: Untagged
@@ -502,7 +504,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 633838432}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: afd66e05dc0bd50478425ce705b0df81, type: 3}
   m_Name: 
@@ -558,6 +560,21 @@ SpriteRenderer:
   m_Color: {r: 0.19117647, g: 0.19117647, b: 0.19117647, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &633838436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 633838432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e305904039fa27d478f8a893944c9dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 2
+  beginDelay: 0
+  toAlpha: 0
 --- !u!1 &757851155
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,7 +863,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 1.5
+  beginDelay: 1
+  toAlpha: 1
 --- !u!1 &976417680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,7 +1032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 3
+  beginDelay: 2
 --- !u!1001 &1226677057
 Prefab:
   m_ObjectHideFlags: 0
@@ -1150,7 +1168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 0.5
-  beginDelay: 3
+  beginDelay: 2
+  toAlpha: 1
 --- !u!1 &1403796145
 GameObject:
   m_ObjectHideFlags: 0

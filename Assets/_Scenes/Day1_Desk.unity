@@ -1170,8 +1170,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11487884, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_Text
-      value: The people I want to serve are in the city. The teeming masses who yearn
-        for sunlight, fresh air and green grass. Where to put my parks?
+      value: The people I want to serve are in the city. They are the teeming masses
+        yearning for sunlight, fresh air and green grass. Where can I put my parks?
       objectReference: {fileID: 0}
     - target: {fileID: 11487848, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -2771,35 +2771,39 @@ MonoBehaviour:
   newspaper: {fileID: 216119102}
   endingParagraphs:
   - Landowners across the region gear up for a battle with Robert Moses over Al Smith's
-    controversial Long Island Park System plan. Parks are seen as popular, but their
-    pending locations has caused quite a stir. From Brooklyn homeowners to Long Island
-    fisherman, homeowners and busiensses decry "Not in My Backyard."
-  - 'New York Times Editorial Board: Parks in farms or Parks at home? With vast tracts
+    controversial Long Island parks plan. Parks are popular in general, but finding
+    the right locations is a challenge. From Brooklyn homeowners to Long Island fisherman,
+    homeowners and businesses decry "Not in My Backyard."
+  - 'New York Times Editorial Board: Parks in farms or Parks at home?  With vast tracts
     of Brooklyn and Queens still underdeveloped, why is the Smith admisitraiton poposing
     parks all the way out on Long Island? Shouldn''t we put them closer to where New
     York City residents actually live? Make parks accessible by subways and trolleys!'
-  - Property magnates on Long Island are preparing to challenge the Smith administration
-    on its audacious and controversial Parks program. While many in the city aknowledge
-    the need for new Parks, not everyone completely agrees.
-  - The Long Island Barrons commited a serious unforced error. In the battle over
-    the Taylor estate fight, the wealthy landowners inadvertantly showed their true
-    intentions. They are not concerned with property rights or due process, they just
-    want to be left alone to enjoy the magesty of the Long Island beaches to themselves,
-    forever closing off this pristine territory from the common folks.
+  - "Property magnates on Long Island are preparing to challenge the Smith administration
+    on its audacious and controversial parks program. While many in the city aknowledge
+    the need for new parks, not everyone agrees.\t\t\t\t"
+  - The Long Island barons commited a serious unforced error. In the battle over the
+    Taylor estate, wealthy landowners inadvertantly showed their true intentions.
+    They are not concerned with property rights or due process, they just want to
+    be left alone to enjoy the magesty of the Long Island beaches for themselves,
+    forever closing off this pristine territory from the common city folk.
   - 
   - 'In a shocking turn of events, the Smith administration has made a new ally in
     the fight for a new park system: F Trubee Davison. Son of Henry Davison, a partner
-    of J.P. Morgna, the younger Davison is a freshman member of the assembly looking
-    to make his mark on New York State politics. Is this an olive branch from Smith
-    to the Long Island Barons?'
+    of J.P. Morgan, the younger Davison is a freshman member of the assembly looking
+    to make his mark on New York politics. Is this an olive branch from Smith to the
+    Long Island barons?'
   - 
   headlines:
-  - a
-  - b
-  - c
-  - d
-  - e
-  - f
+  - New Parks for New York City
+  - 'Barons Lose Battle: New Parks in North Shore'
+  - Parks Expansion into Queens and Brooklyn
+  - 'Barons Lose Battle: New Parks in North Shore'
+  - Parks Bill Defeated; Smith Vows to Fight Again in '28
+  - Smith Delivers Parks Across Long Island
+  - New Parks for New York City
+  - Parks Bill Defeated; Smith Vows to Fight Again in '28
+  - Parks Expansion into Queens and Brooklyn
+  - Smith Delivers Parks Across Long Island
   - 
   - 
   - 
@@ -2825,10 +2829,7 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  curSong: MainSong1
 --- !u!4 &914278810
 Transform:
   m_ObjectHideFlags: 0
@@ -3511,6 +3512,12 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11487884, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_Text
+      value: This Davison fellow will be my puppet. He is a scion of the Barons. Partnering
+        with this young man, I can neutralize the opposition of the wealthy land owners.
+        The older Barons will think I'm on their side!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}
   m_IsPrefabParent: 0
@@ -3786,7 +3793,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: cd491819c800fa0478edcfab19237bca, type: 3}
-    m_FontSize: 84
+    m_FontSize: 82
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 7
@@ -5138,6 +5145,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11487884, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_Text
+      value: Petty squables of lowly men. They think trivial issues can derail my
+        beautful parks. They create excuses from thin air to protect their lands.
+        However, I will not be easily disauded from completing my mission. I must
+        figure out the funding mechanism to acquire lands before they win a media
+        battle.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}
   m_IsPrefabParent: 0
@@ -5448,6 +5463,12 @@ Prefab:
     - target: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487884, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_Text
+      value: The Robber Barons have showed their hand. "Where is a poor millionaire
+        to go?" Foolish men. They think fortunes can insulate them and keep the poor
+        swealtering in the cities. I must leverage my connections with the press!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}

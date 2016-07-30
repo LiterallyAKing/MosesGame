@@ -192,7 +192,6 @@ MonoBehaviour:
   fadeType: 1
   travelTime: 1.4
   beginDelay: 12
-  toAlpha: 1
 --- !u!1 &93334046
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +920,6 @@ GameObject:
   - 4: {fileID: 555911397}
   - 212: {fileID: 555911399}
   - 114: {fileID: 555911398}
-  - 114: {fileID: 555911400}
   m_Layer: 0
   m_Name: IntroFade
   m_TagString: Untagged
@@ -948,7 +946,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 555911396}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: afd66e05dc0bd50478425ce705b0df81, type: 3}
   m_Name: 
@@ -1004,21 +1002,6 @@ SpriteRenderer:
   m_Color: {r: 0.19117647, g: 0.19117647, b: 0.19117647, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!114 &555911400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 555911396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e305904039fa27d478f8a893944c9dd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeType: 1
-  travelTime: 0.7
-  beginDelay: 0
-  toAlpha: 0
 --- !u!1 &659391690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2464,7 +2447,6 @@ MonoBehaviour:
   fadeType: 1
   travelTime: 1.4
   beginDelay: 2
-  toAlpha: 1
 --- !u!212 &1621895889
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2754,7 +2736,6 @@ MonoBehaviour:
   fadeType: 1
   travelTime: 1.4
   beginDelay: 8
-  toAlpha: 1
 --- !u!1 &2006552228
 GameObject:
   m_ObjectHideFlags: 0

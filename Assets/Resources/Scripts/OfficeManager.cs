@@ -28,10 +28,13 @@ public class OfficeManager : MonoBehaviour {
 	public string[] headlines;
 
 	private MusicManager musicman;
-
+	public string curSong;
+	bool dayOver = false;
 
 	// Use this for initialization
 	void Start () {
+		musicman = GameObject.Find ("MusicManager").GetComponent<MusicManager> ();
+		dayOver = false;
 		StartCoroutine("loadNext");
 //		for (int i = 0; i < docDescs.Length; i++) {
 //			//if(docDescs[i].Length > 22)
@@ -41,7 +44,13 @@ public class OfficeManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit ();
+		}
+
+		if (dayOver && Input.GetMouseButtonDown (0)) {
+			async.allowSceneActivation = true;
+		}
 	}
 
 
@@ -95,12 +104,14 @@ public class OfficeManager : MonoBehaviour {
 
 		newspaper.transform.Find ("Headline").GetComponent<Text> ().text = GenerateHeadLine (docCombo);
 		newspaper.transform.Find ("Article").GetComponent<Text> ().text = "    " + articleP1 + '\n' + "    " + articleP2 + '\n' + "    " + articleP3;
-		musicman.SongFadeOut ("MainSong1", 5f);
+		musicman.SongFadeOut (curSong, 5f);
 		Invoke("Ending", 4f);
 	}
 
 	void Ending(){
-		newspaper.GetComponent<Image>().rectTransform.DOLocalMoveY (-348f, 1f);
+		dayOver = true;
+		musicman.StopSong ("TitleCardDriveMusic");
+		newspaper.GetComponent<Image>().rectTransform.DOLocalMoveY (-348f, 1.4f);
 		transform.Find ("NewspaperMoveNoise").GetComponent<AudioSource> ().Play ();
 	}
 

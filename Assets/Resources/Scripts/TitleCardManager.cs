@@ -24,6 +24,8 @@ public class TitleCardManager : MonoBehaviour {
 		fadeTimer = new Timer (timeTillNextScene - (fadetime * 1.1f), false);
 		musicman = GameObject.Find ("MusicManager").GetComponent<MusicManager> ();
 
+
+		musicman.SetSongVolume ("TitleCardDriveMusic", 1f);
 		musicman.PlaySong ("TitleCardDriveMusic");
 		musicman.PlaySong (songtoplay);
 		musicman.SetSongVolume (songtoplay, 0.9f);
