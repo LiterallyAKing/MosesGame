@@ -3246,7 +3246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &858991100
 Transform:
   m_ObjectHideFlags: 0
@@ -3523,14 +3523,14 @@ MonoBehaviour:
   headlines:
   - Robert Moses Elected Governor in Narrow Victory
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
   - Robert Moses Elected Governor in Narrow Victory
   - Robert Moses Elected Governor in Narrow Victory
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
@@ -3539,23 +3539,23 @@ MonoBehaviour:
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
   - Robert Moses Elected Governor in Narrow Victory
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
-  - Governor Lehman Easily Wins Reelection; Moses Back to Parks
-  - Governor Lehman Easily Wins Reelection; Moses Back to Parks
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
-  - Governor Lehman Easily Wins Reelection; Moses Back to Parks
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
   - Governor Lehman Easily Wins Reelection; Moses Back to Parks
-  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks Role
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
+  - Governor Lehman Easily Wins Reelection; Moses Back to Parks
+  - Governor Lehman Easily Wins Reelection; Moses Back to Parks
+  - Governor Lehman Easily Wins Reelection; Moses Back to Parks
+  - Governor Lehman Easily Wins Reelection; Moses Fired from Parks
   curSong: MainSong2
 --- !u!4 &914278810
 Transform:
