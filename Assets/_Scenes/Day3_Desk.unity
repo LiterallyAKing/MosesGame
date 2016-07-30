@@ -906,7 +906,7 @@ RectTransform:
   m_GameObject: {fileID: 216119102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.68, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1072594666}
@@ -916,7 +916,7 @@ RectTransform:
   m_RootOrder: 8
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1097}
+  m_AnchoredPosition: {x: 0, y: -918}
   m_SizeDelta: {x: 1131, y: 1569}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216119104
@@ -2390,7 +2390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09dee8832018cd4f867f491c409d267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPrompt: {fileID: 1254397712}
+  textPrompt: {fileID: 1566280346}
   selected: 0
   selectColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &772072323
@@ -4274,8 +4274,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.249954, y: 495.1}
-  m_SizeDelta: {x: 1975, y: 268}
+  m_AnchoredPosition: {x: -9, y: 467}
+  m_SizeDelta: {x: 2071, y: 343}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1380240985
 MonoBehaviour:
@@ -4311,12 +4311,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 78fb7f0575bd2df4d8f544ea72b3ffed, type: 3}
-    m_FontSize: 80
+    m_Font: {fileID: 12800000, guid: a272a3c90795ee84481a3a28d2095762, type: 3}
+    m_FontSize: 120
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 7
-    m_MaxSize: 98
+    m_MinSize: 1
+    m_MaxSize: 140
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -4718,6 +4718,10 @@ SpriteRenderer:
   m_Color: {r: 0.65882355, g: 0.65882355, b: 0.65882355, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1566280346 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+  m_PrefabInternal: {fileID: 1156571238}
 --- !u!1 &1589110643
 GameObject:
   m_ObjectHideFlags: 0
@@ -4856,8 +4860,8 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -323, y: 57}
-  m_SizeDelta: {x: 728, y: 1172}
+  m_AnchoredPosition: {x: -320.2, y: 59}
+  m_SizeDelta: {x: 755.1, y: 1178}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614541947
 MonoBehaviour:

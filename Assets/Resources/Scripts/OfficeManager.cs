@@ -104,14 +104,25 @@ public class OfficeManager : MonoBehaviour {
 
 		newspaper.transform.Find ("Headline").GetComponent<Text> ().text = GenerateHeadLine (docCombo);
 		newspaper.transform.Find ("Article").GetComponent<Text> ().text = "    " + articleP1 + '\n' + "    " + articleP2 + '\n' + "    " + articleP3;
-		musicman.SongFadeOut (curSong, 8f);
+		if (musicman != null) {
+			musicman.SongFadeOut (curSong, 8f);
+		}
 		Invoke("Ending", 4f);
 	}
 
 	void Ending(){
+		
 		dayOver = true;
 		musicman.StopSong ("TitleCardDriveMusic");
-		newspaper.GetComponent<Image>().rectTransform.DOLocalMoveY (-348f, 1.4f);
+
+		float newspaperpoint = 0f;
+		if (curSong == "MainSong3") {
+			newspaperpoint = -171f;
+		} else {
+			newspaperpoint = -348f;
+		}
+
+		newspaper.GetComponent<Image>().rectTransform.DOLocalMoveY (newspaperpoint, 1.4f);
 		transform.Find ("NewspaperMoveNoise").GetComponent<AudioSource> ().Play ();
 	}
 

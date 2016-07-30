@@ -90,6 +90,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 477254}
   m_RootOrder: 3
@@ -102,6 +103,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 477254}
   m_RootOrder: 0
@@ -114,6 +116,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 477254}
   m_RootOrder: 2
@@ -126,6 +129,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 477254}
   m_RootOrder: 1
@@ -138,6 +142,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 441476}
   - {fileID: 464538}
@@ -159,7 +164,11 @@ MonoBehaviour:
   mainMixer: {fileID: 24100000, guid: eb6ff93a843d51d43a2afcc516274b71, type: 2}
   musicGroup: {fileID: 24360104, guid: eb6ff93a843d51d43a2afcc516274b71, type: 2}
   sfxGroup: {fileID: 24326188, guid: eb6ff93a843d51d43a2afcc516274b71, type: 2}
-  Songs: []
+  Songs:
+  - {fileID: 8300000, guid: 4d85f80497a29c44595cb64f09569bb5, type: 3}
+  - {fileID: 8300000, guid: b3f049ce6e02e410d8e5114b114553f4, type: 3}
+  - {fileID: 8300000, guid: bba77af748cd9401d9aaecfb74a70ae5, type: 3}
+  - {fileID: 8300000, guid: fae95b7829b23491c85e201f7cc52e0f, type: 3}
 --- !u!114 &11425286
 MonoBehaviour:
   m_ObjectHideFlags: 1

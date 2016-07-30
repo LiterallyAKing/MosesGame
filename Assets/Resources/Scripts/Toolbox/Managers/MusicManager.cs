@@ -31,7 +31,6 @@ public class MusicManager : MonoBehaviour {
 			} else {
 				audios [i].outputAudioMixerGroup = mixergroup;
 			}
-
 		}
 	}
 

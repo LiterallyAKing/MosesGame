@@ -523,7 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeType: 1
   travelTime: 2
-  beginDelay: 0
+  beginDelay: 5
   toAlpha: 0
 --- !u!1 &757851155
 GameObject:
@@ -888,7 +888,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1098593650}
-  - 114: {fileID: 1098593651}
   m_Layer: 0
   m_Name: TitleCardManager
   m_TagString: Untagged
@@ -911,21 +910,6 @@ Transform:
   - {fileID: 615753402}
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!114 &1098593651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1098593649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9ba2a40a71efbb4c8bf1d67e078a6d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextScene: Day1_Opening
-  outrofade: {fileID: 615753401}
-  timeTillNextScene: 7
-  songtoplay: MainSong1
 --- !u!1 &1182556365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1010,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11423344, guid: ac234f3365a22944dbb4a03617875058, type: 2}
+      propertyPath: Songs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 477254, guid: ac234f3365a22944dbb4a03617875058, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1058,6 +1046,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11423344, guid: ac234f3365a22944dbb4a03617875058, type: 2}
+      propertyPath: Songs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d85f80497a29c44595cb64f09569bb5, type: 3}
+    - target: {fileID: 11423344, guid: ac234f3365a22944dbb4a03617875058, type: 2}
+      propertyPath: Songs.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b3f049ce6e02e410d8e5114b114553f4, type: 3}
+    - target: {fileID: 11423344, guid: ac234f3365a22944dbb4a03617875058, type: 2}
+      propertyPath: Songs.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: bba77af748cd9401d9aaecfb74a70ae5, type: 3}
+    - target: {fileID: 11423344, guid: ac234f3365a22944dbb4a03617875058, type: 2}
+      propertyPath: Songs.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: fae95b7829b23491c85e201f7cc52e0f, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac234f3365a22944dbb4a03617875058, type: 2}
   m_IsPrefabParent: 0
