@@ -937,7 +937,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0b4019d91ae2f01409474ac853f88d94, type: 3}
-    m_FontSize: 165
+    m_FontSize: 187
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -948,7 +948,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.01
-  m_Text: Confetti Among the Brick Bats
+  m_Text: Confetti with the Brick Bats
 --- !u!222 &1987674724
 CanvasRenderer:
   m_ObjectHideFlags: 0
