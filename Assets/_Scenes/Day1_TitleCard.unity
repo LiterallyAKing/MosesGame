@@ -691,8 +691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 3317f5aa2c38c304b872c510776d1cf6, type: 3}
-  masterHue: 30
-  masterSaturation: 9
+  masterHue: 36
+  masterSaturation: 8
   masterValue: 0
   redsHue: 0
   redsSaturation: 0

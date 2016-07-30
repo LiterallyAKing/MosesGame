@@ -572,6 +572,7 @@ GameObject:
   - 81: {fileID: 757851156}
   - 114: {fileID: 757851161}
   - 114: {fileID: 757851162}
+  - 114: {fileID: 757851163}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -711,6 +712,41 @@ MonoBehaviour:
   noiseTexture: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
   noiseShader: {fileID: 4800000, guid: b0249d8c935344451aa4de6db76f0688, type: 3}
   dx11NoiseShader: {fileID: 4800000, guid: 8b30686bb4322ab42ad5eb50a0210b58, type: 3}
+--- !u!114 &757851163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 757851155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f19d698c687cf4e82379436c0329d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 3317f5aa2c38c304b872c510776d1cf6, type: 3}
+  masterHue: 36
+  masterSaturation: 8
+  masterValue: 0
+  redsHue: 0
+  redsSaturation: 0
+  redsValue: 0
+  yellowsHue: 0
+  yellowsSaturation: 0
+  yellowsValue: 0
+  greensHue: 0
+  greensSaturation: 0
+  greensValue: 0
+  cyansHue: 0
+  cyansSaturation: 0
+  cyansValue: 0
+  bluesHue: 0
+  bluesSaturation: 0
+  bluesValue: 0
+  magentasHue: 0
+  magentasSaturation: 0
+  magentasValue: 0
+  advanced: 0
+  currentChannel: 0
 --- !u!1 &792146382
 GameObject:
   m_ObjectHideFlags: 0
