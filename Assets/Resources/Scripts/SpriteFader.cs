@@ -34,6 +34,7 @@ public class SpriteFader : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
 		if (beginDelay > 0 && delaytimer.IsFinished ()) {
 			StartFade ();
 		}
@@ -44,6 +45,6 @@ public class SpriteFader : MonoBehaviour {
 	}
 
 	void StartFade(){
-		DOTween.To (() => alphaval, x => alphaval = x, original_alpha, travelTime);
+		DOTween.To (() => alphaval, x => alphaval = x, toAlpha, travelTime);
 	}
 }

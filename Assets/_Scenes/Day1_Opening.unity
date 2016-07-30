@@ -1929,7 +1929,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1136185303}
   - 212: {fileID: 1136185302}
-  - 114: {fileID: 1136185301}
+  - 114: {fileID: 1136185304}
   m_Layer: 0
   m_Name: OutroFade
   m_TagString: Untagged
@@ -1937,38 +1937,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1136185301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1136185300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afd66e05dc0bd50478425ce705b0df81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeType: 0
-  travelTime: 1
-  beginImmediately: 1
-  killWhenFinished: 1
-  oscillationType: 0
-  customOscillation:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!212 &1136185302
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2012,6 +1980,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 192334461}
   m_RootOrder: 1
+--- !u!114 &1136185304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1136185300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e305904039fa27d478f8a893944c9dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeType: 1
+  travelTime: 1
+  beginDelay: 0
+  toAlpha: 1
 --- !u!1001 &1226677057
 Prefab:
   m_ObjectHideFlags: 0
