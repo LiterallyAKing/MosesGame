@@ -110,7 +110,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 53111808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.18, y: -0.55, z: 0}
+  m_LocalPosition: {x: 6.18, y: -0.73, z: 0}
   m_LocalScale: {x: 2.94, y: 1.17, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c17f514f3b73b408ba8c8bf22a5cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Day1_Desk
+  nextScene: Day2_Desk
   outrofade: {fileID: 1136185300}
   timeTillNextScene: 22
 --- !u!4 &192334461
@@ -708,7 +708,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 503468426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.79, y: -1.55, z: -1}
+  m_LocalPosition: {x: -8.79, y: -1.34, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -722,9 +722,11 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 503468426}
-  m_Text: 'Next for Moses is a new challenge: how to pass a comprehensive park
+  m_Text: 'Brash and young, Mayor Lindsay looks to establish himself as New York
 
-    plan to help the citizens of New York.'
+    City''s preeminent center of authority. Can Moses maintain his grip on
+
+    power as he approaches his 80th birthday?'
   m_OffsetZ: 0
   m_CharacterSize: 0.18
   m_LineSpacing: 1
@@ -2250,7 +2252,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1309789975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.79, y: 3.24, z: -1}
+  m_LocalPosition: {x: -8.79, y: 2.83, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -2264,11 +2266,9 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1309789975}
-  m_Text: 'A young Robert Moses has his first taste of power. A special assistant
+  m_Text: 'Seventy-eight year old Robert Moses has been at the center of power in
 
-    to Governor Al Smith, Moses brings a brilliant mind and an appetite
-
-    for reform to clubby, corrupt, and change-averse New York.'
+    New York for nearly four decades.'
   m_OffsetZ: 0
   m_CharacterSize: 0.18
   m_LineSpacing: 1
@@ -2503,7 +2503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1621895886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.18, y: -0.82, z: 0}
+  m_LocalPosition: {x: 6.18, y: -0.25, z: 0}
   m_LocalScale: {x: 2.94, y: 1.17, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -2853,8 +2853,9 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2006552228}
-  m_Text: "By 35, Moses has already earned a reputation as one of the best bill \ndrafters
-    in the state's history.\n"
+  m_Text: 'Yet he still has work to do. Bridges and highways to build, parks to
+
+    maintain, and an empire to run from Randalls Island.'
   m_OffsetZ: 0
   m_CharacterSize: 0.18
   m_LineSpacing: 1
