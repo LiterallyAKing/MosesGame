@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeType: 1
-  travelTime: 0.7
+  travelTime: 1.2
   beginDelay: 0
   toAlpha: 0
 --- !u!1 &659391690

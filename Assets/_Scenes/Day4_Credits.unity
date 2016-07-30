@@ -617,6 +617,7 @@ GameObject:
   - 222: {fileID: 1090863074}
   - 114: {fileID: 1090863073}
   - 114: {fileID: 1090863072}
+  - 114: {fileID: 1090863075}
   m_Layer: 5
   m_Name: IntroFade
   m_TagString: Untagged
@@ -648,7 +649,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1090863070}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a79d17d164755814cba2b28ee811ed5a, type: 3}
   m_Name: 
@@ -687,6 +688,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1090863070}
+--- !u!114 &1090863075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1090863070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 722934815e8a7e343bc19e437b821df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  travelTime: 3
 --- !u!1001 &1226677057
 Prefab:
   m_ObjectHideFlags: 0
