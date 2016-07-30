@@ -1,0 +1,20 @@
+diff a/Assets/Resources/Art/EnterScene/Animation/EnterAnim.anim b/Assets/Resources/Art/EnterScene/Animation/EnterAnim.anim	(rejected hunks)
+@@ -86,13 +86,13 @@
+         tangentMode: 0
+       - time: 7.0833335
+         value: {x: 5.81, y: -2.68, z: 0}
+-        inSlope: {x: -0.6033334, y: 0.42128193, z: 0}
+-        outSlope: {x: -0.6033334, y: 0.42128193, z: 0}
++        inSlope: {x: -0.3102857, y: 0.36461526, z: 0}
++        outSlope: {x: -0.3102857, y: 0.36461526, z: 0}
+         tangentMode: 0
+-      - time: 10.083333
++      - time: 12.916667
+         value: {x: 2.19, y: -1.98, z: 0}
+-        inSlope: {x: -1.2066668, y: 0.23333338, z: 0}
+-        outSlope: {x: -1.2066668, y: 0.23333338, z: 0}
++        inSlope: {x: -0.6205714, y: 0.120000005, z: 0}
++        outSlope: {x: -0.6205714, y: 0.120000005, z: 0}
+         tangentMode: 0
+       m_PreInfinity: 2
+       m_PostInfinity: 2
