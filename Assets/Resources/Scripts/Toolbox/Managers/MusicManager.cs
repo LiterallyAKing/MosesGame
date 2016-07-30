@@ -26,7 +26,12 @@ public class MusicManager : MonoBehaviour {
 			//audios [i].mute = true;
 			audios [i].playOnAwake = false;
 			audios [i].loop = true;
-			audios [i].outputAudioMixerGroup = mixergroup;
+			if (audios [i].name == "TitleCardDriveMusic") {
+				audios [i].outputAudioMixerGroup = sfxGroup;
+			} else {
+				audios [i].outputAudioMixerGroup = mixergroup;
+			}
+
 		}
 	}
 
