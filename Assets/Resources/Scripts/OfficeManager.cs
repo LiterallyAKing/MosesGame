@@ -104,7 +104,7 @@ public class OfficeManager : MonoBehaviour {
 
 		newspaper.transform.Find ("Headline").GetComponent<Text> ().text = GenerateHeadLine (docCombo);
 		newspaper.transform.Find ("Article").GetComponent<Text> ().text = "    " + articleP1 + '\n' + "    " + articleP2 + '\n' + "    " + articleP3;
-		musicman.SongFadeOut (curSong, 5f);
+		musicman.SongFadeOut (curSong, 8f);
 		Invoke("Ending", 4f);
 	}
 
