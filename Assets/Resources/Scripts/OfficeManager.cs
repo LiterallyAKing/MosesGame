@@ -101,14 +101,18 @@ public class OfficeManager : MonoBehaviour {
 
 	void BeginOfEnd(){
 		outroFade.gameObject.SetActive (true);
-		outroFade.DOFade (1f, 3f);
+		outroFade.DOFade (1f, 6f);
 
 		sortCombo ();
 
 		newspaper.transform.Find ("Headline").GetComponent<Text> ().text = GenerateHeadLine (docCombo);
 		newspaper.transform.Find ("Article").GetComponent<Text> ().text = "    " + articleP1 + '\n' + "    " + articleP2 + '\n' + "    " + articleP3;
 		if (musicman != null) {
-				musicman.SongFadeOut (curSong, 10f);
+			if (curSong == "MainSong3") {
+				musicman.SongFadeOut (curSong, 6f);
+			} else {
+				musicman.SongFadeOut (curSong, 12f);
+			}
 		}
 		Invoke("Ending", 4f);
 	}

@@ -26,8 +26,10 @@ public class CreditsManager : MonoBehaviour {
 		}
 
 		if (Time.timeSinceLevelLoad > 2f) {
-			if(Input.GetMouseButtonDown(0)){
-				async.allowSceneActivation = true;
+			if (GameObject.Find ("Tutorial") == null) {
+				if (Input.GetMouseButtonDown (0)) {
+					async.allowSceneActivation = true;
+				}
 			}
 		}
 			

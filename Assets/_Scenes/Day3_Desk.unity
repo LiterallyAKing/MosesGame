@@ -3119,24 +3119,23 @@ MonoBehaviour:
   outroFade: {fileID: 259834250}
   newspaper: {fileID: 216119102}
   endingParagraphs:
-  - "\"Linsday vs. Moses - Round 1 New Mayor wants to fund transportation plan with
-    Triborough funds. Moses claims it is plot to remove him from office by other means.\"\t\t\t\t"
+  - "\"Linsday vs. Moses -  New Mayor wants to fund transportation plan with Triborough
+    funds. Moses claims it is plot to remove him from office by other means.\"\t\t\t\t"
   - "\"Editorial: The future of New York City. Traffic, deficits, crime. How can we
     turn our city around? A new report from the Linsday administraiton offers a glimpse
     of how to plan New York for the 21st century.\"\t\t\t\t"
   - "\"Moses defers to Rocky: In a suprising turn of events, Robert Moses appears
     to be supporting Governor Rockefeller's plan to reorganize the myriad of downstate
     transportation administrations. Could Moses be running to subways soon?\"\t\t\t\t"
-  - "\"Editorial: Lindsay vs. Moses - Round 2 In his long and storied career, he has
-    successfully remade New York as a 20th Century City with his great public works.
-    While we strongly believe that Commissioner Moses should maintain his current
-    position, he should also be brought into line in order to support the priorities
-    of the city. \"\t\t\t\t"
-  - "\"Linsday vs. Moses - Round 3 Mayor Lindsay has publically called for using the
-    surpluses of the Triborough Authority to fund an expansive new transporation plan
-    for New York City. As noted in his administatration's white papers, this plan
-    would include a dramatic funding shift away from bridge and highway projects to
-    those funding mass transit.\"\t\t\t\t"
+  - "\"Editorial: Lindsay vs. Moses - In his long and storied career, he has successfully
+    remade New York as a 20th Century City with his great public works. While we strongly
+    believe that Commissioner Moses should maintain his current position, he should
+    also be brought into line in order to support the priorities of the city. \"\t\t\t\t"
+  - "\"Linsday vs. Moses - Mayor Lindsay has publically called for using the surpluses
+    of the Triborough Authority to fund an expansive new transporation plan for New
+    York City. As noted in his administatration's white papers, this plan would include
+    a dramatic funding shift away from bridge and highway projects to those funding
+    mass transit.\"\t\t\t\t"
   - "\"No Triborough Funds for MTA! Triborough Bridge & Tunnel Authority Chairman
     Robert Moses stated today that he cannot help fund the city's mass transit projects
     because all Triborough funds have been allocated to \"\"internal improvements\"\"
