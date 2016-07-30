@@ -417,7 +417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &832454037
 RectTransform:
   m_ObjectHideFlags: 0
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79d17d164755814cba2b28ee811ed5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  travelTime: 1.2
+  travelTime: 3
 --- !u!114 &1090863073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,7 +775,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1511499997
 RectTransform:
   m_ObjectHideFlags: 0
@@ -826,6 +826,47 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1511499996}
+--- !u!1 &1647857289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1647857290}
+  - 114: {fileID: 1647857291}
+  m_Layer: 0
+  m_Name: CreditsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1647857290
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647857289}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 244.14551, y: 209.94879, z: -5.4021606}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+--- !u!114 &1647857291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647857289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 081b27cd7d89592438b1ab2374d277d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: Day1_TitleCard
 --- !u!1 &1987674721
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,8 +900,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -22.727272}
-  m_SizeDelta: {x: 1198, y: 414}
+  m_AnchoredPosition: {x: 10, y: -4}
+  m_SizeDelta: {x: 1198, y: 568}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1987674723
 MonoBehaviour:
@@ -883,20 +924,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0b4019d91ae2f01409474ac853f88d94, type: 3}
-    m_FontSize: 40
+    m_FontSize: 165
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 251
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "The world of politics, even for a master builder, requires tradeoffs\n\n\r\nExamine
-    documents to determine how Moses solves his greatest challenges\n\n\nChoose three
-    to commit to a plan, and witness the results."
+    m_LineSpacing: 1.01
+  m_Text: Confetti Among the Brick Bats
 --- !u!222 &1987674724
 CanvasRenderer:
   m_ObjectHideFlags: 0
