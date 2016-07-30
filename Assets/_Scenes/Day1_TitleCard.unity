@@ -413,30 +413,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 615753401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afd66e05dc0bd50478425ce705b0df81, type: 3}
+  m_Script: {fileID: 11500000, guid: e305904039fa27d478f8a893944c9dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeType: 0
+  fadeType: 1
   travelTime: 1
-  beginImmediately: 1
-  killWhenFinished: 1
-  oscillationType: 0
-  customOscillation:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  beginDelay: 0
+  toAlpha: 1
 --- !u!212 &615753404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -461,7 +444,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -2020133043
   m_SortingOrder: 101
   m_Sprite: {fileID: 21300000, guid: 230ac55e130f54c9e818ba00845fd1a6, type: 3}
   m_Color: {r: 0.19117647, g: 0.19117647, b: 0.19117647, a: 0}
@@ -476,7 +459,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 633838433}
   - 212: {fileID: 633838435}
-  - 114: {fileID: 633838434}
   - 114: {fileID: 633838436}
   m_Layer: 0
   m_Name: IntroFade
@@ -498,38 +480,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1098593650}
   m_RootOrder: 0
---- !u!114 &633838434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 633838432}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afd66e05dc0bd50478425ce705b0df81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeType: 1
-  travelTime: 2
-  beginImmediately: 1
-  killWhenFinished: 1
-  oscillationType: 0
-  customOscillation:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!212 &633838435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -554,7 +504,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -2020133043
   m_SortingOrder: 101
   m_Sprite: {fileID: 21300000, guid: 230ac55e130f54c9e818ba00845fd1a6, type: 3}
   m_Color: {r: 0.19117647, g: 0.19117647, b: 0.19117647, a: 1}

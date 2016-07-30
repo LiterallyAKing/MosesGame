@@ -23,6 +23,7 @@ public class SpriteFader : MonoBehaviour {
 		alphaval = Mathf.Abs (1f - toAlpha);
 
 		sprend = GetComponent < SpriteRenderer> ();
+
 		if (beginDelay == 0) {
 			StartFade ();
 		} else {
@@ -39,12 +40,10 @@ public class SpriteFader : MonoBehaviour {
 		Color newval = sprend.color;
 		newval.a = alphaval;
 		sprend.color = newval;
-//		print (alphaval);
-//		print (original_alpha);
-//		print (toAlpha);
+
 	}
 
 	void StartFade(){
-		DOTween.To(()=> alphaval, x=> alphaval = x, original_alpha, travelTime);
+		DOTween.To (() => alphaval, x => alphaval = x, original_alpha, travelTime);
 	}
 }

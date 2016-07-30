@@ -20,7 +20,7 @@ public class TitleCardManager : MonoBehaviour {
 		sceneTimer = new Timer (timeTillNextScene, false);
 		StartCoroutine("loadNext");
 		float fadetime;
-		fadetime = outrofade.GetComponent<Fader> ().travelTime;
+		fadetime = outrofade.GetComponent<SpriteFader> ().travelTime;
 		fadeTimer = new Timer (timeTillNextScene - (fadetime * 1.1f), false);
 		musicman = GameObject.Find ("MusicManager").GetComponent<MusicManager> ();
 

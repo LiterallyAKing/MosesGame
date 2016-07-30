@@ -64,7 +64,7 @@ public class OfficeManager : MonoBehaviour {
 		docCombo += chosen.ToString ();
 
 		if (docsChosenSoFar == 1) {
-			chosenDocsHolder.rectTransform.DOLocalMoveX (547f, 1f);
+			chosenDocsHolder.rectTransform.DOLocalMoveX (547f, 0.7f);
 			//TODO: Find sound for this, like a typewriter.
 			//choseEnter.Play ();
 		}

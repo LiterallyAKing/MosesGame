@@ -2591,7 +2591,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -2020133043
   m_SortingOrder: 101
   m_Sprite: {fileID: 21300000, guid: 230ac55e130f54c9e818ba00845fd1a6, type: 3}
   m_Color: {r: 0.19117647, g: 0.19117647, b: 0.19117647, a: 1}
@@ -5469,6 +5469,14 @@ Prefab:
       value: The Robber Barons have showed their hand. "Where is a poor millionaire
         to go?" Foolish men. They think fortunes can insulate them and keep the poor
         swealtering in the cities. I must leverage my connections with the press!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 321540853}
+    - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Deselected
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363a7b9ae408644eac70767c635175a, type: 2}
