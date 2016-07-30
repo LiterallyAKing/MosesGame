@@ -277,6 +277,10 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112456136}
+--- !u!1 &120123692 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+  m_PrefabInternal: {fileID: 1156571238}
 --- !u!1 &143105582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,7 +2142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09dee8832018cd4f867f491c409d267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPrompt: {fileID: 1254397712}
+  textPrompt: {fileID: 1899639973}
   selected: 0
   selectColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!65 &471020016
@@ -2702,7 +2706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09dee8832018cd4f867f491c409d267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPrompt: {fileID: 1254397712}
+  textPrompt: {fileID: 120123692}
   selected: 0
   selectColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &772072323
@@ -3871,7 +3875,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -102, y: -453}
+  m_AnchoredPosition: {x: -102, y: -474}
   m_SizeDelta: {x: 463, y: 784}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072594667
@@ -5388,7 +5392,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -98, y: 168}
-  m_SizeDelta: {x: 812, y: 993}
+  m_SizeDelta: {x: 828.7, y: 993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614541947
 MonoBehaviour:
@@ -6095,6 +6099,10 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1899639973 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 116652, guid: d363a7b9ae408644eac70767c635175a, type: 2}
+  m_PrefabInternal: {fileID: 1511789965}
 --- !u!1 &1922669171
 GameObject:
   m_ObjectHideFlags: 0
