@@ -20,7 +20,7 @@ public class OpeningManager : MonoBehaviour {
 		sceneTimer = new Timer (timeTillNextScene, false);
 		StartCoroutine("loadNext");
 
-		fadetime = outrofade.GetComponent<Fader> ().travelTime;
+		fadetime = outrofade.GetComponent<SpriteFader> ().travelTime;
 		fadeTimer = new Timer (timeTillNextScene - (fadetime * 1.1f), false);
 		fadesongTimer = new Timer (timeTillNextScene - (fadetime * 2f), false);
 		musicman = GameObject.Find ("MusicManager").GetComponent<MusicManager> ();

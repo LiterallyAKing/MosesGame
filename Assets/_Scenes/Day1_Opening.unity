@@ -192,7 +192,7 @@ MonoBehaviour:
   fadeType: 1
   travelTime: 1.4
   beginDelay: 12
-  toAlpha: 1
+  toAlpha: 0.8
 --- !u!1 &93334046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,7 +2447,7 @@ MonoBehaviour:
   fadeType: 1
   travelTime: 1.4
   beginDelay: 2
-  toAlpha: 1
+  toAlpha: 0.8
 --- !u!212 &1621895889
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2737,7 +2737,7 @@ MonoBehaviour:
   fadeType: 1
   travelTime: 1.4
   beginDelay: 8
-  toAlpha: 1
+  toAlpha: 0.8
 --- !u!1 &2006552228
 GameObject:
   m_ObjectHideFlags: 0
