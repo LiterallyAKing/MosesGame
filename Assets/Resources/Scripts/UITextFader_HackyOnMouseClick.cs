@@ -19,7 +19,7 @@ public class UITextFader_HackyOnMouseClick : MonoBehaviour {
 		if (Time.timeSinceLevelLoad > 1f) {
 			if (Input.GetMouseButtonDown (0)) {
 				//myimg.DOFade (0f, travelTime);
-				mytext.DOFade (0f, travelTime);
+				mytext.DOFade (0f, travelTime).OnComplete(() => gameObject.SetActive(false));
 			}
 		}
 	}

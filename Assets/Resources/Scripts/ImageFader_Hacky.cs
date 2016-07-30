@@ -10,7 +10,7 @@ public class ImageFader_Hacky : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Image myimg = GetComponent<Image> ();
-		myimg.DOFade (0f, travelTime);
+		myimg.DOFade (0f, travelTime).OnComplete(() => gameObject.SetActive(false));
 	}
 	
 	// Update is called once per frame

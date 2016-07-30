@@ -18,7 +18,7 @@ public class ImageFader_HackyOnMouseClick : MonoBehaviour {
 	void Update () {
 		if (Time.timeSinceLevelLoad > 1f) {
 			if (Input.GetMouseButtonDown (0)) {
-				myimg.DOFade (0f, travelTime);
+				myimg.DOFade (0f, travelTime).OnComplete(() => gameObject.SetActive(false));
 				//mytext.DOFade (0f, travelTime);
 			}
 		}
