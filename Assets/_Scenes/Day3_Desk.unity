@@ -3115,7 +3115,7 @@ MonoBehaviour:
   - Triborough Response
   - Triborough Budget
   - 
-  nextScene: Day3_TitleCard
+  nextScene: Day4_Credits
   outroFade: {fileID: 259834250}
   newspaper: {fileID: 216119102}
   endingParagraphs:

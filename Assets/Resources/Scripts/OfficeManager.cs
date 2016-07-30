@@ -49,6 +49,9 @@ public class OfficeManager : MonoBehaviour {
 		}
 
 		if (dayOver && Input.GetMouseButtonDown (0)) {
+//			if (curSong == "MainSong3") {
+//				musicman.SongFadeOut (curSong, 10f);
+//			}
 			async.allowSceneActivation = true;
 		}
 	}
@@ -105,7 +108,7 @@ public class OfficeManager : MonoBehaviour {
 		newspaper.transform.Find ("Headline").GetComponent<Text> ().text = GenerateHeadLine (docCombo);
 		newspaper.transform.Find ("Article").GetComponent<Text> ().text = "    " + articleP1 + '\n' + "    " + articleP2 + '\n' + "    " + articleP3;
 		if (musicman != null) {
-			musicman.SongFadeOut (curSong, 8f);
+				musicman.SongFadeOut (curSong, 10f);
 		}
 		Invoke("Ending", 4f);
 	}
