@@ -2114,7 +2114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 3317f5aa2c38c304b872c510776d1cf6, type: 3}
-  masterHue: 30
+  masterHue: 36
   masterSaturation: 8
   masterValue: 0
   redsHue: 0
@@ -2221,7 +2221,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 1
-  m_Color: {r: 1, g: 0.9764706, b: 0.9411765, a: 1}
+  m_Color: {r: 1, g: 0.9794118, b: 0.9485294, a: 1}
   m_Intensity: 1.07
   m_Range: 10
   m_SpotAngle: 30
@@ -2557,7 +2557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &858991100
 Transform:
   m_ObjectHideFlags: 0
