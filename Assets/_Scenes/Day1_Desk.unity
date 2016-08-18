@@ -5415,9 +5415,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11487884, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_Text
-      value: Petty squables of lowly men. They think trivial issues can derail my
-        beautful parks. They create excuses from thin air to protect their lands.
-        However, I will not be easily disauded from completing my mission. I must
+      value: Petty squabbles of lowly men. They think trivial issues can derail my
+        beautiful parks. They create excuses from thin air to protect their lands.
+        However, I will not be easily dissuaded from completing my mission. I must
         figure out the funding mechanism to acquire lands before they win a media
         battle.
       objectReference: {fileID: 0}
@@ -5826,7 +5826,7 @@ Prefab:
       propertyPath: m_Text
       value: The Robber Barons have showed their hand. "Where is a poor millionaire
         to go?" Foolish men. They think fortunes can insulate them and keep the poor
-        swealtering in the cities. I must leverage my connections with the press!
+        sweltering in the cities. I must leverage my connections with the press!
       objectReference: {fileID: 0}
     - target: {fileID: 11425738, guid: d363a7b9ae408644eac70767c635175a, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
