@@ -20,7 +20,12 @@ public class SpriteFader : MonoBehaviour {
 	private Timer delaytimer;
 
 	void Start () {
-		alphaval = Mathf.Abs (1f - toAlpha);
+		if (toAlpha == 0 || toAlpha == 1f) {
+			alphaval = Mathf.Abs (1f - toAlpha);
+		} else {
+			toAlpha = 0;
+		}
+
 
 		sprend = GetComponent < SpriteRenderer> ();
 
