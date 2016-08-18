@@ -1,4 +1,6 @@
-﻿Shader "Custom/OneBitObject2" {
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
+Shader "Custom/OneBitObject2" {
 	Properties {
 		_Color ("Color", Color) = (1,1,1,1)
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
@@ -140,7 +142,7 @@ v2f_surf vert_surf (appdata_full v) {
   UNITY_INITIALIZE_OUTPUT(v2f_surf,o);
   o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
   o.pack0.xy = TRANSFORM_TEX(v.texcoord, _MainTex);
-  float3 worldPos = mul(_Object2World, v.vertex).xyz;
+  float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
   fixed3 worldNormal = UnityObjectToWorldNormal(v.normal);
   #if !defined(LIGHTMAP_OFF) && defined(DIRLIGHTMAP_COMBINED)
   fixed3 worldTangent = UnityObjectToWorldDir(v.tangent.xyz);
@@ -180,7 +182,7 @@ v2f_surf vert_surf (appdata_full v) {
   UNITY_TRANSFER_FOG(o,o.pos); // pass fog coordinates to pixel shader
   // return o;
 
-  float3 origin = mul(_Object2World, float4(0.0,0.0,0.0,1.0)).xyz;
+  float3 origin = mul(unity_ObjectToWorld, float4(0.0,0.0,0.0,1.0)).xyz;
   float3 area = float3(100,100,100);
   float3 cameraDir = mul((float3x3)UNITY_MATRIX_V,float3(0,0,1));
   float4 vnorm;
@@ -190,7 +192,7 @@ v2f_surf vert_surf (appdata_full v) {
   if(_Terrain) {
     o.color = fixed3(vnorm.xyz);
   } else {
-    float3 norm = mul(_Object2World, vnorm);
+    float3 norm = mul(unity_ObjectToWorld, vnorm);
     norm *= v.color.r * rand(norm);
     float light = saturate((dot(norm, cameraDir)+1.0)*0.5);
 
@@ -384,7 +386,7 @@ v2f_surf vert_surf (appdata_full v) {
   UNITY_INITIALIZE_OUTPUT(v2f_surf,o);
   o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
   o.pack0.xy = TRANSFORM_TEX(v.texcoord, _MainTex);
-  float3 worldPos = mul(_Object2World, v.vertex).xyz;
+  float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
   fixed3 worldNormal = UnityObjectToWorldNormal(v.normal);
   o.worldPos = worldPos;
   o.worldNormal = worldNormal;
@@ -551,7 +553,7 @@ v2f_surf vert_surf (appdata_full v) {
   UNITY_INITIALIZE_OUTPUT(v2f_surf,o);
   o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
   o.pack0.xy = TRANSFORM_TEX(v.texcoord, _MainTex);
-  float3 worldPos = mul(_Object2World, v.vertex).xyz;
+  float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
   fixed3 worldNormal = UnityObjectToWorldNormal(v.normal);
   o.worldPos = worldPos;
   o.worldNormal = worldNormal;
@@ -567,7 +569,7 @@ v2f_surf vert_surf (appdata_full v) {
 #ifndef LIGHTMAP_OFF
   o.lmap.xy = v.texcoord1.xy * unity_LightmapST.xy + unity_LightmapST.zw;
   #ifdef DIRLIGHTMAP_OFF
-    o.lmapFadePos.xyz = (mul(_Object2World, v.vertex).xyz - unity_ShadowFadeCenterAndType.xyz) * unity_ShadowFadeCenterAndType.w;
+    o.lmapFadePos.xyz = (mul(unity_ObjectToWorld, v.vertex).xyz - unity_ShadowFadeCenterAndType.xyz) * unity_ShadowFadeCenterAndType.w;
     o.lmapFadePos.w = (-mul(UNITY_MATRIX_MV, v.vertex).z) * (1.0 - unity_ShadowFadeCenterAndType.w);
   #endif
 #else
@@ -763,7 +765,7 @@ v2f_surf vert_surf (appdata_full v) {
   UNITY_INITIALIZE_OUTPUT(v2f_surf,o);
   o.pos = UnityMetaVertexPosition(v.vertex, v.texcoord1.xy, v.texcoord2.xy, unity_LightmapST, unity_DynamicLightmapST);
   o.pack0.xy = TRANSFORM_TEX(v.texcoord, _MainTex);
-  float3 worldPos = mul(_Object2World, v.vertex).xyz;
+  float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
   fixed3 worldNormal = UnityObjectToWorldNormal(v.normal);
   o.worldPos = worldPos;
   return o;

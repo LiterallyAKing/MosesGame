@@ -1,4 +1,7 @@
-﻿Shader "Custom/Smear"
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+
+Shader "Custom/Smear"
 {
 	Properties
 	{
@@ -63,7 +66,7 @@
 		void vert(inout appdata_full v, out Input o)
 		{
 			UNITY_INITIALIZE_OUTPUT(Input, o);
-			fixed4 worldPos = mul(_Object2World, v.vertex);
+			fixed4 worldPos = mul(unity_ObjectToWorld, v.vertex);
 	
 			fixed3 worldOffset = _Position.xyz - _PrevPosition.xyz; // -5
 			fixed3 localOffset = worldPos.xyz - _Position.xyz; // -5
@@ -76,7 +79,7 @@
 	
 			fixed3 smearOffset = -worldOffset.xyz * lerp(1, noise(worldPos * _NoiseScale), step(0, _NoiseScale));
 			worldPos.xyz += smearOffset;
-			v.vertex = mul(_World2Object, worldPos);
+			v.vertex = mul(unity_WorldToObject, worldPos);
 		}
 	
 		void surf(Input IN, inout SurfaceOutputStandard o)
