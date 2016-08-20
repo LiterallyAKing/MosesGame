@@ -23,7 +23,7 @@ public class SpriteFader : MonoBehaviour {
 		if (toAlpha == 0 || toAlpha == 1f) {
 			alphaval = Mathf.Abs (1f - toAlpha);
 		} else {
-			toAlpha = 0;
+			alphaval = 0;
 		}
 
 
